@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <!-- JNLP File for MAVisto --> 
+ <jnlp 
+   spec="1.0+" 
+   codebase="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/jar/"
+   href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/mavisto.jnlp">
+   <information> 
+     <title>MAVisto (Version 2.7.0)</title> 
+     <vendor>Network Analysis Group, IPK Gatersleben</vendor>
+     <description>MAVisto Web Start</description> 
+     <offline-allowed/> 
+   </information> 
+   <security> 
+       <all-permissions/> 
+   </security> 
+   <resources> 
+     <j2se version="1.5+" initial-heap-size="256m" max-heap-size="1024m"/>
+     <jar href="mavisto.jar" main="true" download="eager"/> 
+     <jar href="batik-awt-util.jar"/>
+     <jar href="batik-bridge.jar"/>
+     <jar href="batik-css.jar"/>
+     <jar href="batik-dom.jar"/>
+     <jar href="batik-ext.jar"/>
+     <jar href="batik-gvt.jar"/>
+     <jar href="batik-parser.jar"/>
+     <jar href="batik-rasterizer.jar"/>
+     <jar href="batik-script.jar"/>
+     <jar href="batik-svg-dom.jar"/>
+     <jar href="batik-svggen.jar"/>
+     <jar href="batik-transcoder.jar"/>
+     <jar href="batik-util.jar"/>
+     <jar href="batik-xml.jar"/>
+     <jar href="pdf-transcoder.jar"/>
+     <jar href="colt.jar"/>
+     <jar href="commons-beanutils.jar"/>
+     <jar href="commons-collections-3.1.jar"/> 
+     <jar href="commons-digester.jar"/> 
+     <jar href="commons-logging.jar"/> 
+     <jar href="commons-math-1.0.jar"/> 
+     <jar href="jama.jar"/>
+     <jar href="jcommon-1.0.0-pre1.jar"/>
+     <jar href="jfreechart-1.0.0-pre1.jar"/>
+     <jar href="jlex_java_cup.jar"/>
+     <jar href="junit.jar"/>
+     <jar href="xercesImpl.jar"/>
+     <jar href="xmlParserAPIs.jar"/>
+   </resources> 
+   <application-desc main-class="org.graffiti.editor.GraffitiEditor"/> 
+ </jnlp> 
