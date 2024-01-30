@@ -10,3 +10,6 @@
 [submodule "Kavosh"]
 	path = Kavosh
 	url = https://github.com/shmohammadi86/Kavosh
+[submodule "modet"]
+	path = modet
+	url = https://github.com/sabyasachipatra/modet
