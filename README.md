@@ -1,5 +1,5 @@
 # HON-tools
-Collection tools for exploring higher-order networks. Follows are their original links, we make copies in case some of them might be broken in the future. 
+Collection of tools for exploring higher-order networks. Follows are their original links, we make copies in case some of them might be broken in the future. 
 # List of Motif Tools
 MFinder --https://www.weizmann.ac.il/mcb/UriAlon/download/ParTI
 <br/>
