@@ -7,3 +7,6 @@
 [submodule "ParaMODA"]
 	path = ParaMODA
 	url = https://github.com/smbadiwe/ParaMODA
+[submodule "Kavosh"]
+	path = Kavosh
+	url = https://github.com/shmohammadi86/Kavosh
