@@ -4,3 +4,6 @@
 [submodule "CSCI3104_GC2"]
 	path = CSCI3104_GC2
 	url = https://github.com/jptboy/CSCI3104_GC2
+[submodule "ParaMODA"]
+	path = ParaMODA
+	url = https://github.com/smbadiwe/ParaMODA
