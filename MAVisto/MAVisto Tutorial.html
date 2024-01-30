@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0076)https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>MAVisto Tutorial</title>
+  <meta name="GENERATOR" content="Quanta Plus">
+  <meta name="description" content="Tutorial for MAVisto - Motif Analysis and Visualisation Tool.">
+<meta name="author" content="Henning Schwöbbermeyer">
+<meta name="keywords" content="MAVisto, MAVisto Tutorial, Network Analysis, Network Motifs, Visualisation, Pattern, Pattern Search">
+<meta name="date" content="2005-06-15T16:30:00+01:00">
+  <style type="text/css">
+  body { margin-left:50px; margin-right:50px; margin-top:50px; margin-bottom:0px }
+  </style>
+</head>
+<body>
+<div align="center"><img width="510" height="169" src="./MAVisto Tutorial_files/mavisto.png" alt="MAVisto logo">
+<h1>Motif Analysis and Visualisation Tool</h1>
+</div>
+<br>
+
+ <h1><a name="top">Overview of the features of MAVisto</a></h1>
+
+ <h2>&nbsp;&nbsp;Content</h2>
+ <ol>
+ <li><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#start">Start MAVisto</a></li>
+ <li><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#load">Loading network data</a></li>
+ <li><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#creating">Creating a network</a></li>
+ <li><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#layout">Network layout</a></li>
+ <li><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#search">Search for network motifs</a></li>
+ <li><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#exploration">Perspectives for motif exploration</a></li>
+ </ol>
+
+ <br>
+ <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/index.html">back</a></div>
+ <hr>
+
+<table border="0" cellpadding="30">
+   <tbody><tr>
+    <td>
+    <h2><a name="start">1. Start MAVisto</a></h2>
+
+    MAVisto can be started by calling javaws <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/mavisto.jnlp">
+    https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/mavisto.jnlp</a>
+    (e.g., from the terminal on Linux or Start/Run from Windows) or by clicking on the address,
+    if this page is loaded inside a web browser and everything is correctly set up.
+     </td>
+    </tr>
+    <tr>
+      <td>
+      <div align="center">   <img width="1093" height="853" src="./MAVisto Tutorial_files/MAVisto_start.png" alt="start">    </div>
+     </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#top"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+      <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+      <h2><a name="load">2. Loading network data</a></h2>
+       For loading network data from a file, MAVisto supports the
+       <a href="http://vlado.fmf.uni-lj.si/pub/networks/pajek/">Pajek-.net-</a>
+       and the <a href="https://github.com/GunterMueller/UNI_PASSAU_FMI_Graph_Drawing/blob/master/GML/gml-technical-report.pdf">GML-format</a>.
+       Additionally, a simple text file format (each line contains two vertex-identifiers specifying an edge
+       and optionally a third string specifying the edge label: &lt;ID-source-vertex&gt;&lt;ID-target-vertex&gt;[&lt;edge_label&gt;])
+       can be used to read network data in and than save it in the GML-format.
+     </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">  <img width="514" height="358" src="./MAVisto Tutorial_files/MAVisto_loading.png" alt="load file"> </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#top"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+      <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <h2><a name="creating">3. Creating a network</a></h2>
+       MAVisto offers graph editor functionality for network manipulation
+       and network creation from scratch, such as adding and moving vertices and edges.
+       The editor functionality is accessible via the editing tools create, move and label
+       displayed as buttons on the left side. The tool bar contains a checkbox to specify whether the new graph
+       is directed or not.
+     </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"><img width="647" height="519" src="./MAVisto Tutorial_files/MAVisto_creating.png" alt="create network"> </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#top"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+      <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <h2><a name="layout">4. Network layout</a></h2>
+       An advanced force-directed layout algorithm is included to generate concise
+       drawings of the network automatically. It is an implementation of a
+       spring embedder algorithm and offers different possibilities for adjusting
+       layout-specific parameters.
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <div align="center">  <img width="1093" height="853" src="./MAVisto Tutorial_files/MAVisto_layout.png" alt="layout"> </div>
+     </td>
+    </tr>
+    <tr>
+      <td>
+       <h2><a name="layout">4.1 Edge coloring</a></h2>
+       If the analysed network contains different edge types (identified by their label), these edge types
+       can be highlighted with different colors to obtain a better overview of their distribution within the
+       network. Use the button "Edit preferences of the graph" of the tool bar to select colors for the
+       edge types.
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <div align="center">  <img width="1093" height="853" src="./MAVisto Tutorial_files/MAVisto_edgecoloring.png" alt="layout"> </div>
+     </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#top"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+      <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h2><a name="search">5. Search for network motifs</a></h2>
+        The interface for starting the network motif search is integrated in the <strong>Exploration panel</strong>.
+        The following parameters controlling the search can be adapted:
+         <br>
+         <br>
+       <table border="1" cellspacing="2" cellpadding="10">
+       <colgroup>
+           <col width="25%">
+           <col width="75%">
+       </colgroup>
+           <tbody><tr>
+              <td valign="top">
+                  Size [no. Vertices / Edges]
+              </td>
+              <td>
+                 The size of the motifs to search for, which is either defined as the number of vertices or as the number of edges of a motif.
+                 The current setting is displayed in brackets. This is a toggle button that allows switching between these two possibilities.
+              </td>
+           </tr>
+           <tr>
+              <td valign="top">
+                  Randomisations
+              </td>
+              <td>
+                 Number of random networks to generate for the calculation of P-value and Z-score,
+                 which are measures of the statistical significance of motifs for a particular network.
+                 For a reliable statistics 1000 randomisations are recommended.
+                 Details about the P-value and the Z-score can be found <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/z_score.html">here</a>.
+              </td>
+           </tr>
+           <tr>
+              <td valign="top">
+                  Checkbox left
+              </td>
+              <td>
+                 The checkbox on the left is used to indicate whether edge labels should be considered during the search.
+              </td>
+           </tr>
+           <tr>
+              <td valign="top">
+                  Checkbox middle
+              </td>
+              <td>
+                 The checkbox in the middle is used to indicate whether vertex labels should be considered during the search.
+              </td>
+           </tr>
+           <tr>
+              <td valign="top">
+                  Checkbox right
+              </td>
+              <td>
+                 The checkbox on the right is used to specify if certain edge types (identified by their label) should be excluded from the randomisation process.
+                 This requires that the analysed network contains at least partially edge labels.
+              </td>
+           </tr>
+           <tr>
+              <td valign="top">
+                Button search / stop
+              </td>
+              <td>
+                The button to start the search for network motifs. Once a search has been started and
+                is running, this button can be used to abort the search process.
+              </td>
+           </tr>
+       </tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <div align="center">  <img width="674" height="346" src="./MAVisto Tutorial_files/MAVisto_search.png" alt="search"> </div>
+     </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#top"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+      <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <h2><a name="exploration">6. Perspectives for motif exploration</a></h2>
+
+      MAVisto provides different perspectives for the interactive exploration of network motifs.
+      The perspectives motif table, motif view and motif fingerprint allow selection of a motif
+      and the active motif of the other perspectives is updated accordingly. The perspectives are:
+
+       <ol type="I">
+       <li><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#table">Motif table</a></li>
+       <li><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#view">Motif view</a></li>
+       <li><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#fingerprint">Motif fingerprint</a></li>
+       <li><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#matches">Motif matches</a></li>
+      </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#top"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+      <hr>
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+     <table border="0" cellspacing="2" cellpadding="10">
+            <tbody><tr>
+              <td>
+                  <h3><a name="table">I. Motif table</a></h3>
+                  The motif table lists information about the discovered motifs
+                  of a search. The motif table supports sorting by all criteria
+                  and selecting of motifs to be displayed in the motif view. The following
+                  information is presented:
+                 <br>
+              </td>
+             </tr>
+             <tr>
+               <td>
+       <table border="1" cellspacing="2" cellpadding="10">
+       <colgroup>
+           <col width="25%">
+           <col width="75%">
+       </colgroup>
+            <tbody><tr>
+              <td valign="top">
+                  Label
+              </td>
+              <td>
+                 A string representing a unique identifier for each motif.
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                  Size
+              </td>
+              <td>
+                 The size of each motif is given by the number of vertices and edges.
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                  Structure
+              </td>
+              <td>
+                 Information about the structure is given by the number of
+                 branches (buug) and cycles (cuug) in the underlying undirected graph.
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                  Frequency
+              </td>
+              <td>
+                The frequency values of each motif are listed for the three different
+                frequency concepts F1, F2 and F3. A comprehensive description of the
+                frequency concepts is available <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/frequency_concepts.html">at this site</a>.
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                  Statistics
+              </td>
+              <td>
+                Information about the statistical significance of motifs is given by the P-value and
+                the Z-score, which are calculated based on the comparison of the motif frequency
+                in the analysed network (using concept F1) to the frequency distribution in the randomised networks.
+                A more detailed description of the P-value and Z-score calculation and the randomisation algorithm is presented
+                <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/z_score.html">at this site</a>. Furthermore, mean value and standard deviation of motif frequency in
+                randomised versions of the network are presented.
+              </td>
+            </tr>
+           </tbody></table>
+           </td>
+          </tr>
+          <tr>
+            <td>
+               <div align="center">  <img width="797" height="394" src="./MAVisto Tutorial_files/MAVisto_table.png" alt="Motif table"> </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+               <b>Actions</b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="1" cellspacing="2" cellpadding="10">
+                <colgroup>
+                  <col width="25%">
+                  <col width="75%">
+                </colgroup>
+                <tbody><tr>
+                  <td valign="top">
+                  Show selected motif(s)
+                  </td>
+                  <td>
+                   This button is used to display the selected motif(s) of the motif table in the motif view.
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                  Show label derivatives
+                  </td>
+                  <td>
+                   Shows the different motif label derivatives of the selected motif. Motif label derivatives differ
+                   in the labels of their edges and/or vertices. This function requires that the search for motifs has
+                   been performed under consideration of edge labels, vertex labels or both, edge and vertex labels.
+                   If label derivatives of one motif are shown, this button can be used to return to the normal motif table.
+                  </td>
+                </tr>
+              </tbody></table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#exploration"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+              <hr>
+            </td>
+          </tr>
+            <tr>
+              <td>
+                  <h3><a name="view">II. Motif view</a></h3>
+                  The motif view provides a visual representation of the structure of motifs. Displayed motifs can be laid out
+                  and highlighted in the analysed network. The available options are:
+              </td>
+            </tr>
+            <tr>
+              <td>
+
+             <table border="1" cellspacing="2" cellpadding="10">
+       <colgroup>
+           <col width="25%">
+           <col width="75%">
+       </colgroup>
+            <tbody><tr>
+              <td valign="top">
+                  Layout
+              </td>
+              <td>
+                 An automatic layout of motifs is calculated using a force directed algorithm. Alternatively, the
+                 layout can be adjusted manually by selecting and moving the vertices of the motif.
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                  Removing of motifs
+              </td>
+              <td>
+                 The active motif or all motifs displayed in the motif view can be removed.
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                  Options
+              </td>
+              <td>
+                  This starts a dialog where it is possible to define some options for the appearance of the
+                  highlighted motif matches in the target graph:
+                  <ul>
+                  <li>Mode of element marking: use color or gray values for highlighting the coverage of
+                  network elements by motif matches or for highlighting network elements of individual matches.</li>
+                  <li>Marking of individual elements: in some cases network elements can be assigned to individual
+                  matches (edges for frequency concept F2, nodes and edges for frequency concept F3). It is possible
+                  to use different colors for the elements of each highlighted match or a uniform color for all elements
+                  of the highlighted match.</li>
+                  <li>Color of unmarked elements: the color for the network elements which are not covered by the
+                  highlighted motif matches.</li>
+                  </ul>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                  Export SVG + PDF
+              </td>
+              <td>
+                  Exports the currently displayed motif in the SVG and PDF file format.
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                  Highlighting(F1, Ff2, Ff3)
+              </td>
+              <td>
+                 Highlighting of the matches of the active motif within the analysed network, which is described
+                 <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#matches">below</a>. For a description of the frequency concepts please visit
+                 <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/frequency_concepts.html">this site</a>. The highlighting of the matches can be reseted.
+              </td>
+            </tr>
+            </tbody></table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+               <div align="center">  <img width="612" height="357" src="./MAVisto Tutorial_files/MAVisto_view.png" alt="Motif view"> </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#exploration"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+              <hr>
+            </td>
+          </tr>
+            <tr>
+              <td>
+                  <h3><a name="fingerprint">III. Motif fingerprint</a></h3>
+                  The motif fingerprint represents the motif frequency spectrum of the
+                  analysed network as a diagram. The fingerprint comprises all motifs
+                  of a particular size and plots the motif frequency values of the
+                  motif table. The order of the motifs is defined by the
+                  alphanumerical order of the motif label, taking both the supported
+                  motifs and the motifs with frequency zero into account. This
+                  guarantees the comparability of motif fingerprints of different networks.
+                  The values for the three frequency concepts are plotted as stacked columns and
+                  are represented by different colors: F1 as red column in the back, F2 as blue
+                  column in the middle and F3 as green column in the front. If a color is not visible, it
+                  is fully covered by column in front of it and has the same value, since the
+                  values for the frequency concepts are monotonically decreasing from F1 to F3.
+                  Motifs not supported by the analysed network are displayed as a yellow column
+                  with frequency -1. The active column is indicated by an arrow on top.
+              </td>
+           </tr>
+          <tr>
+            <td>
+               <div align="center">  <img width="733" height="401" src="./MAVisto Tutorial_files/MAVisto_fingerprint.png" alt="Motif fingerprint"> </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#exploration"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+              <hr>
+            </td>
+          </tr>
+          <tr>
+             <td valign="top">
+                 <h3><a name="matches">IV. Motif matches</a></h3>
+                 For the visual exploration of the occurrences of
+                 a motif within the analysed network, highlighting of the matches,
+                 respectively the coverage of network elements by the matches,
+                 is provided, depending on the applied frequency concept:
+             </td>
+          </tr>
+           <tr>
+              <td>
+             <table border="1" cellspacing="2" cellpadding="10">
+       <colgroup>
+           <col width="25%">
+           <col width="75%">
+       </colgroup>
+            <tbody><tr>
+              <td valign="top">
+                  Frequency concept F1
+              </td>
+              <td>
+                  Concept F1 does not restrict the sharing of network elements, therefore
+                  network elements can be part of different overlapping matches. The network
+                  elements are highlighted according to their coverage by matches of
+                  the selected motif using <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#example_f1_color">colors</a> or
+                  <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#example_f1_grayscale">gray values</a>. The colorbar shows the
+                  mapping of coverage values to colors and provides the possibility to show
+                  a table with the coverage values of the vertices.
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                  Frequency concept F2
+              </td>
+              <td>
+                  Concept F2 allows the sharing of vertices by different matches, but edges are
+                  assigned to individual matches. Therefore, vertices are highlighted according to their
+                  coverage by the selected matches. The colorbar shows the mapping of coverage values
+                  to colors. Edges are marked either <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#example_f2_individual">individually</a>
+                  or <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#example_f2_uniform">uniformly</a>. In case of an individually marking,
+                  all edges of a particular match are displayed with the same color. Please keep in mind
+                  that the colors used for the vertices and for the edges have different meanings for
+                  frequency concept F2 and should not be confused.
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                  Frequency concept F3
+              </td>
+              <td>
+                  Concept F3 does not allow any sharing of network elements for the selected matches.
+                  Therefore, network elements are uniquely assigned to individual matches and can be
+                  marked with different <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#example_f3_individual"> colors </a> or the
+                  <a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#example_f3_uniform_layout">motif preserving layout</a> can be applied.
+                  The motif preserving layout copies the layout of the motif in the motif view to
+                  all selected matches in the analysed network, which then gets newly laid out.
+                  Use the option "Init: Copy Pattern Layout" in the layout panel after highlighting
+                  the matches of frequency concept F3.
+              </td>
+            </tr>
+           </tbody></table>
+             </td>
+           </tr>
+         </tbody></table>
+     </td>
+    </tr>
+          <tr>
+            <td>
+              <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#exploration"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+              <hr>
+            </td>
+          </tr>
+    <tr>
+      <td>
+        <h3><a name="example_f1_color">Highlighting matches of frequency concept F1 with colors</a></h3>
+      <div align="center">  <img width="1280" height="1024" src="./MAVisto Tutorial_files/MAVisto_exploration_f1_color.png" alt="Highlighting matches F1 color"> </div>
+     </td>
+    </tr>
+          <tr>
+            <td>
+              <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#matches"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+              <hr>
+            </td>
+          </tr>
+    <tr>
+      <td>
+        <h3><a name="example_f1_grayscale">Highlighting matches of frequency concept F1 with gray values</a></h3>
+      <div align="center">  <img width="1280" height="1024" src="./MAVisto Tutorial_files/MAVisto_exploration_f1_grayscale.png" alt="Highlighting matches F1 grayscale"> </div>
+     </td>
+    </tr>
+          <tr>
+            <td>
+              <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#matches"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+              <hr>
+            </td>
+          </tr>
+    <tr>
+      <td>
+        <h3><a name="example_f2_individual">Highlighting matches of frequency concept F2 with individual match marking</a></h3>
+      <div align="center">  <img width="1280" height="1024" src="./MAVisto Tutorial_files/MAVisto_exploration_f2_individual.png" alt="Highlighting matches F2 individual"> </div>
+     </td>
+    </tr>
+          <tr>
+            <td>
+              <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#matches"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+              <hr>
+            </td>
+          </tr>
+    <tr>
+      <td>
+        <h3><a name="example_f2_uniform">Highlighting matches of frequency concept F2 with uniform match marking</a></h3>
+      <div align="center">  <img width="1280" height="1024" src="./MAVisto Tutorial_files/MAVisto_exploration_f2_uniform.png" alt="Highlighting matches F2 uniform"> </div>
+     </td>
+    </tr>
+          <tr>
+            <td>
+              <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#matches"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+              <hr>
+            </td>
+          </tr>
+    <tr>
+      <td>
+        <h3><a name="example_f3_individual">Highlighting matches of frequency concept F3 with individual match marking</a></h3>
+      <div align="center">  <img width="1280" height="1024" src="./MAVisto Tutorial_files/MAVisto_exploration_f3_individual.png" alt="Highlighting matches F3 individual"> </div>
+     </td>
+    </tr>
+          <tr>
+            <td>
+              <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#matches"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+              <hr>
+            </td>
+          </tr>
+    <tr>
+      <td>
+        <h3><a name="example_f3_uniform_layout">Highlighting matches of frequency concept F3 with uniform match marking and application of motif preserving layout</a></h3>
+      <div align="center">  <img width="1280" height="1024" src="./MAVisto Tutorial_files/MAVisto_exploration_f3_uniform_layout.png" alt="Highlighting matches F3 uniform, preserving layout"> </div>
+     </td>
+    </tr>
+          <tr>
+            <td>
+              <div align="center"><a href="https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/tutorial.html#matches"><img width="14" height="10" src="./MAVisto Tutorial_files/up.gif" alt="top"></a></div>
+            </td>
+          </tr>
+  </tbody></table>
+  <hr>
+  <table cellspacing="15" width="100%" border="0">
+    <tbody>
+      <tr style="FONT-SIZE: 12pt" align="CENTER">
+        <td align="LEFT" width="33%">
+          <a href="http://validator.w3.org/check?uri=referer"><img src="./MAVisto Tutorial_files/valid-html401.png" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+        </td>
+        <td align="CENTER" width="33%" style="font-size: 8pt">
+    <a href="mailto:feedback@vanted.org">Contact</a>
+        </td>
+        <td align="RIGHT" width="33%" style="font-size: 8pt">
+         Page last updated on July 5, 2023.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</body></html>
