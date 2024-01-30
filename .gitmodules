@@ -1,3 +1,6 @@
 [submodule "fanmod-cmd"]
 	path = fanmod-cmd
 	url = https://github.com/gabbage/fanmod-cmd
+[submodule "CSCI3104_GC2"]
+	path = CSCI3104_GC2
+	url = https://github.com/jptboy/CSCI3104_GC2
