@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0032)https://www.dcc.fc.up.pt/gtries/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        
+	<title>gtrieScanner - Quick Discovery of Network Motifs</title>
+	<link rel="StyleSheet" href="./gtrieScanner - Quick Discovery of Network Motifs_files/style.css" type="text/css">
+</head>
+
+<body>
+
+
+<table border="0">
+<tbody><tr>
+<td><img src="./gtrieScanner - Quick Discovery of Network Motifs_files/gtries.png" alt="gtrieScanner"></td>
+<td width="15">&nbsp;</td>
+<td valign="middle"><h1>gtrieScanner - Quick Discovery of Network Motifs</h1></td>
+</tr>
+</tbody></table>
+
+<h3><a href="http://www.dcc.fc.up.pt/~pribeiro/">Pedro Ribeiro</a> - CRACS &amp; INESC-TEC, DCC/FCUP</h3>
+
+<p>| <a href="https://www.dcc.fc.up.pt/gtries/#src">Source Code</a> | <a href="https://www.dcc.fc.up.pt/gtries/#aux">Auxiliary Files</a> | <a href="https://www.dcc.fc.up.pt/gtries/#graphs">Graphs</a> | <a href="https://www.dcc.fc.up.pt/gtries/#output">Example Output</a> | <a href="https://www.dcc.fc.up.pt/gtries/#manual">Short Manual</a> | <a href="https://www.dcc.fc.up.pt/gtries/#future">Future</a> | <a href="https://www.dcc.fc.up.pt/gtries/#pubs">Publications</a> | <a href="https://www.dcc.fc.up.pt/gtries/#other">Other</a> |
+
+</p><hr>
+
+<p>This webpage hosts a software tool that uses the <b>g-trie data structure</b> to count occurrences of subgraphs on larger graphs, determining if they are network motifs.
+
+</p><p>If you want to learn more about g-tries, please consult the following references (at the end of this page there is a more complete list of publications related to g-tries):
+
+</p><ul>
+<li>Pedro Ribeiro and Fernando Silva. <b><i>G-Tries: a data structure for
+  storing and finding subgraphs</i></b>. In Data Mining and Knowledge
+  Discovery, Vol. 28(2), pp. 337-377, Springer, March, 2014.
+  [<a href="http://dx.doi.org/10.1007/s10618-013-0303-4">DOI</a>]
+</li></ul>
+
+<ul>
+<li>Pedro Ribeiro and Fernando Silva. <b><i>Querying Subgraph Sets with G-Tries.</i></b> <font color="#444444"><i><b>(Best Paper Award)</b></i></font>
+<a href="https://sites.google.com/site/dbsocial12/">2nd ACM
+    SIGMOD Workshop on Databases and Social Networks (DBSocial)</a>,
+    Scottsdale, USA, pp&nbsp;25-30, May, 2012 
+[<a href="http://dx.doi.org/10.1145/2304536.2304541">DOI</a>]
+[<a href="http://www.dcc.fc.up.pt/~pribeiro/publications/Ribeiro2012-DBSocial.pdf">PDF</a>]
+</li></ul>
+
+<ul>
+<li>Pedro Ribeiro. <i><b>Efficient and Scalable Algorithms for Network Motifs Discovery.</b></i> PhD Thesis. Doctoral Programme in Computer Science, Faculty of
+  Science, University of Porto. June, 2011. [<a href="http://www.dcc.fc.up.pt/~pribeiro/publications/pribeiro-phd-2011.pdf">PDF</a>]
+</li></ul>
+
+<ul>
+<li>Pedro Ribeiro and Fernando Silva. <i><b>G-Tries: an efficient data structure for discovering network motifs.</b></i> <a href="http://www.nrcbioinformatics.ca/acmsac2010/">ACM 25th
+Symposium On Applied Computing - Bioinformatics Track</a>, Sierre,
+Switzerland, pp 1559-1566, March, 2010. [<a href="http://dx.doi.org/10.1145/1774088.1774422">DOI</a>]
+</li></ul>
+
+<hr>
+
+<h2 id="src">Source Code</h2>
+
+<p><b>Warning: this release is preliminary and is aimed mainly for demonstrating the capabilits of g-tries. Future releases will include more features.
+</b></p><ul><b>
+<li>Version 0.1 - 23/02/2012 - [<a href="https://www.dcc.fc.up.pt/gtries/gtrieScanner_src_01.zip">ZIP file</a>]<br>
+<i>(tested with Ubuntu 11 and gcc 4.6.1)</i><br>
+&nbsp;<br>
+Released under license: <a href="https://www.dcc.fc.up.pt/gtries/LICENSE.txt">Artistic License 2.0</a><br>
+<i>(This software uses the <a href="http://cs.anu.edu.au/~bdm/nauty/">nauty</a> program version 2.4 by Brendan
+McKay. Therefore, nauty's license restrictions also apply to the usage
+of gtrieScanner.)</i>
+</li>
+</b></ul><b>
+
+<p>To compile you need a C++ compiler (use GCC if possible) and the
+  make utility (just do 'make' after uncompressing the source). This
+  preliminary release was made for Linux systems.
+
+</p><hr>
+
+<h2 id="aux">Auxiliary Files</h2>
+
+<h2>Pre-Computed G-Tries</h2>
+
+<ul>
+<li><a href="https://www.dcc.fc.up.pt/gtries/gtries.zip">gtries.zip</a>: all undirected graphs from sizes 3 to 9, all directed graphs from sizes 3 to 6<br>
+<i>(note that this is also an example of the types of files that the program expects as g-tries files)</i>
+</li></ul>
+
+<h2>Subgraph Lists</h2>
+
+<ul>
+<li><a href="https://www.dcc.fc.up.pt/gtries/lists.zip">lists.zip</a>: all undirected graphs from sizes 3 to 9, all directed graphs from sizes 3 to 6<br>
+<i>(note that this is also an example of the types of files that the program expects as subgraph lists)</i>
+</li></ul>
+
+<hr>
+
+<h2 id="graphs">Example Graphs</h2>
+
+<p>These graphs are in 'simple_weight' format (edge list) and are
+  available
+  from <a href="http://www.weizmann.ac.il/mcb/UriAlon/groupNetworkMotifSW.html">mfinder's
+    page</a> (and therefore are also readable by that software and,
+  incidentally, by <a href="http://theinf1.informatik.uni-jena.de/~wernicke/motifs/">Fanmod</a>).
+
+</p><ul>
+<li><a href="https://www.dcc.fc.up.pt/gtries/s420_st.txt">s420_st.txt</a>: An undirected electronic circuit (252 nodes, 399 edges)
+</li><li><a href="https://www.dcc.fc.up.pt/gtries/yeastInter_st.txt">yeastInter_st.txt</a>: a directed network expression gene regulation interactions in yeast organism (688 Nodes, 1079 Edges)
+</li></ul>
+
+<hr>
+
+<h2 id="output">Example Output</h2>
+
+<p>You can check an example output file: <a href="https://www.dcc.fc.up.pt/gtries/example.html">example.html</a>
+
+</p><hr>
+
+<h2 id="manual">Very Short Manual</h2>
+
+<p>A limitation of this particular release is that you can only search for subgraphs of a specific size, that is,
+you cannot search for subgraphs of different sizes at the same time (but nothing forbids you to do more than search)
+
+</p><h3>Examples of usage</h3>
+
+<p><b><tt>gtrieScanner -s 3 -m esu -g s420_st.txt</tt></b><br>
+<i>Compute the frequencies of subgraphs of size 3 in the undirected s420_st.txt network, using ESU algorithm</i>
+
+</p><p><b><tt>gtrieScanner -s 4 -m gtrie dir4.gt -g yeastInter_st.txt -d -t html -o yeast.html</tt></b><br>
+<i>Compute the frequencies of subgraphs of size 4 in directed yeastInter_st.txt network, using the g-trie stored in undir4.gt. Produce an HTML output to yeast.html file.</i>
+
+</p><p><b><tt>gtrieScanner -s 5 -m subgraphs undir5.str -g s420_st.txt -r 100 -oc dump.txt</tt></b><br>
+<i>Compute the motifs of size 5 in undirected s420_st.txt network, using the subgraphs listed in undir5.str and 100 random networks. Dump all occurrences of the subgbaphs in the original network 'dump.txt'.</i>
+
+</p><p><b><tt>gtrieScanner -s 5 -c dir5.str -o mygtrie5.gt -d</tt></b><br>
+<i>Produce the directed g-trie containing the subgraph list of dir5.str and output it to a pre-computed g-trie file 'mygtrie.gt'</i>
+
+</p><p>Note that in all cases results are first ordered by z-score and then by frequency.
+
+</p><p><b><tt></tt></b>
+
+</p><h3>Command Line Syntax</h3>
+
+<p>You should call the program like this:
+
+</p><pre>gtrieScanner -s &lt;motif_size&gt; [other_option]
+</pre>
+
+<p>Possible Options
+
+</p><pre> - [-s &lt;int&gt;] or [--size &lt;int&gt;]
+   Subgraph/motif size to consider (mandatory)
+
+ - [-g &lt;file&gt;] or [--graph &lt;file&gt;]
+   File containing the graph (mandatory except when just creating a g-trie)
+
+ - [-d] or [--directed]
+   Graph is directed <i>(default is undirected)</i>
+
+ - [-u] or [--undirected]
+   Graph is undirected <i>(default is undirected)</i>
+
+ - [-f &lt;format&gt;] of [--format &lt;format&gt;]
+   Format of the graph file. 'format' can be: <i>(simple_weight)</i>
+   . "simple": list of pairs "a b", meaning an edge between a and b
+   . "simple_weight": list of triples "a b c", meaning an edge between a and b with weight c (c is ignored)
+   In all cases node labels are integers starting from 1. See above for example files.
+
+ - [-m &lt;method&gt;] or [--method &lt;method&gt;]
+   Method for searching for motifs. 'method' can be: (mandatory except when just creating a g-trie)
+   . "esu": Use ESU on original graph
+   . "gtrie &lt;file&gt;": use the g-trie of 'file' on original network
+   . "subgraphs &lt;file&gt;": insert the subgraph list (one subgraph per line, as exemplified above) 
+                               on a g-trie and use it on the original network.
+   In any case, for computing the census on the random networks, a g-trie will be created with the
+   subgraphs that appear at least once.
+
+ - [-c &lt;file&gt;] or [--create &lt;file&gt;]
+   Create g-trie from 'file' with subgraph list (one subgraph per line, see above examples)
+   G-Trie is written to the file indicated by '-o'
+
+ - [-o &lt;file&gt;] or [--output &lt;file&gt;]
+   Name for the file which will contain the results of the computation.
+
+ - [-oc &lt;file&gt;] or [--occurrences &lt;file&gt;]
+   Show/Dump all individual occurrences of subgraphs in the original network to 'file'
+
+ - [-t &lt;format&gt;] or [--type &lt;format&gt;]
+   Format of the results. 'format' can be:
+   . "txt": text file
+   . "html": html file, ready for being seen on a browser
+     (need connection to internet for graph drawing)
+
+ - [-r &lt;int&gt;] or [--random &lt;int&gt;]
+   Number of random networks to generate. <i>(default is 0)</i>
+   Leave at zero to just compute frequency.
+
+ - [-rs &lt;int&gt;] or [--rseed &lt;int&gt;]
+   Seed for random number generation <i>(default is time())</i>
+
+ - [-re &lt;int&gt;] or [--rexchanges &lt;int&gt;]
+   Number of exchanges per edge on randomization. <i>(default is 3)</i>
+
+ - [-rt &lt;int&gt;] or [--tries &lt;int&gt;]
+   Number of tries per edge on randomization. <i>(default is 10)</i>
+</pre>
+
+<hr>
+
+<h2 id="future">Future - Planned updates</h2>
+
+<p>There are many features already with code written that will be rolled out and included in the following public releases. For example:
+
+</p><ul>
+<li>Documentation of code using Doyxgen
+</li><li>Other types of graph formats (GML, ...)
+</li><li>Possibility of using sampling
+</li><li>Multiple subgraph sizes on same operation
+</li><li>Graphical User Interface
+</li><li>...
+</li></ul>
+
+<hr>
+
+<h2 id="pubs">Publications</h2>
+
+<p>This is the list of our publications directed related to g-tries:
+
+</p><ul>
+<li><b>Querying Subgraph Sets with G-Tries</b> <font color="#444444"><i><b>(Best Paper Award)</b></i></font><br>
+Pedro Ribeiro and Fernando Silva.<br>
+<a href="https://sites.google.com/site/dbsocial12/">2nd ACM
+    SIGMOD Workshop on Databases and Social Networks (DBSocial)</a>,
+    Scottsdale, USA, pp&nbsp;25-30, May, 2012<br>
+<a href="http://dx.doi.org/10.1145/2304536.2304541"><img border="0" src="./gtrieScanner - Quick Discovery of Network Motifs_files/doi.jpg" alt="DOI" width="50" height="20"></a>
+<a href="http://www.dcc.fc.up.pt/~pribeiro/publications/Ribeiro2012-DBSocial.pdf"><img border="0" src="./gtrieScanner - Quick Discovery of Network Motifs_files/pdf.jpg" alt="PDF" width="50" height="20"></a>
+</li></ul>
+
+<ul>
+<li><b>Efficient and Scalable Algorithms for Network Motifs Discovery</b><br>
+Pedro Ribeiro.<br>
+PhD Thesis. Doctoral Programme in Computer Science, Faculty of
+  Science, University of Porto. June, 2011.<br>
+<a href="http://www.dcc.fc.up.pt/~pribeiro/publications/pribeiro-phd-2011.pdf"><img border="0" src="./gtrieScanner - Quick Discovery of Network Motifs_files/pdf.jpg" alt="PDF" width="50" height="20"></a>
+</li></ul>
+
+<ul>
+<li><b>Efficient Parallel Subgraph Counting using G-Tries</b><br>
+Pedro Ribeiro, Fernando Silva and Luís Lopes.<br>
+<a href="http://www.cluster2010.org/">IEEE International
+Conference on Cluster Computing</a>, Crete, Greece, pp 217-226, IEEE CS Press, September, 2010.<br>
+<a href="http://doi.ieeecomputersociety.org/10.1109/CLUSTER.2010.27"><img border="0" src="./gtrieScanner - Quick Discovery of Network Motifs_files/doi.jpg" alt="DOI" width="50" height="20"></a>
+</li></ul>
+
+<ul>
+<li><b>Efficient Subgraph Frequency Estimation with G-Tries</b><br>
+Pedro Ribeiro and Fernando Silva.<br>
+<a href="http://algo2010.csc.liv.ac.uk/wabi/">10th International
+Workshop on Algorithms in Bioinformatics</a>, Liverpool, UK, pp 238-249, Springer LNBI,
+September, 2010.<br>
+<a href="http://dx.doi.org/10.1007/978-3-642-15294-8_20"><img border="0" src="./gtrieScanner - Quick Discovery of Network Motifs_files/doi.jpg" alt="DOI" width="50" height="20"></a>
+</li></ul>
+
+<ul>
+<li><b>G-Tries: an efficient data structure for discovering network motifs
+</b><br> Pedro Ribeiro and Fernando Silva.<br>  Proceedings of
+the <a href="http://www.nrcbioinformatics.ca/acmsac2010/">ACM 25th
+Symposium On Applied Computing - Bioinformatics Track</a>, Sierre,
+Switzerland, pp 1559-1566, March, 2010.<br>
+<a href="http://dx.doi.org/10.1145/1774088.1774422"><img border="0" src="./gtrieScanner - Quick Discovery of Network Motifs_files/doi.jpg" alt="DOI" width="50" height="20"></a>
+</li></ul>
+
+
+<p>Not using g-tries, but also related to network motif discovery:
+
+</p><ul>
+<li><b>Parallel Discovery of Network Motifs</b><br>
+Pedro Ribeiro, Fernando Silva and Luís Lopes.<br>
+<a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/622895/description">Journal
+  of Parallel and Distributed Computing</a>, Vol 72(2), pp 144-154,
+  Elsevier, February, 2012.<br>
+<a href="http://dx.doi.org/10.1016/j.jpdc.2011.08.007"><img border="0" src="./gtrieScanner - Quick Discovery of Network Motifs_files/doi.jpg" alt="DOI" width="50" height="20"></a>
+</li></ul>
+
+<ul>
+<li><b>A Parallel Algorithm for Counting Subgraphs in Complex Networks</b><br>
+Pedro Ribeiro, Fernando Silva and Luís Lopes.<br>
+<a href="http://www.biostec.org/BIOSTEC2011/home.asp">3rd International Joint Conference on Biomedical Engineering Systems
+  and Technologies - BIOSTEC</a>, Revised Selected Papers,
+  pp 380-393, <a href="http://www.springer.com/computer/bioinformatics/book/978-3-642-18471-0">Springer CCIS Vol. 127</a>, 2011.<br>
+<a href="http://dx.doi.org/10.1007/978-3-642-18472-7_30"><img border="0" src="./gtrieScanner - Quick Discovery of Network Motifs_files/doi.jpg" alt="DOI" width="50" height="20"></a>
+</li></ul>
+
+<ul>
+<li><b>Strategies for Network Motifs Discovery</b><br>
+Pedro Ribeiro, Fernando Silva and Marcus Kaiser.<br>
+<a href="http://www.escience2009.org/">5th IEEE International Conference
+on e-Science</a>, Oxford, UK, pp 80-87, IEEE CS Press, December, 2009.<br>
+<a href="http://dx.doi.org/10.1109/e-Science.2009.20"><img border="0" src="./gtrieScanner - Quick Discovery of Network Motifs_files/doi.jpg" alt="DOI" width="50" height="20"></a>
+</li></ul>
+
+<hr>
+
+<h2 id="other">Other Related Software</h2>
+
+<ul>
+<li><a href="http://theinf1.informatik.uni-jena.de/~wernicke/motifs/">Fanmod</a> - a tool for fast network motif detection
+</li><li><a href="http://www.weizmann.ac.il/mcb/UriAlon/groupNetworkMotifSW.html">mfinder</a> - Network motifs detection tool
+</li><li><a href="http://lbb.ut.ac.ir/Download/LBBsoft/Kavosh/">Kavosh</a> - a new algorithm for finding network motifs
+</li><li><a href="http://mavisto.ipk-gatersleben.de/">MAVisto</a> - Motif Analysis and Visualisation Tool
+</li></ul>
+
+<hr>
+
+<p class="right"><a href="http://www.dcc.fc.up.pt/~pribeiro/">Pedro Ribeiro</a> - CRACS &amp; INESC-TEC, DCC/FCUP
+
+<!-- Start of StatCounter Code-->
+<script type="text/javascript">
+var sc_project=8208793; 
+var sc_invisible=1; 
+var sc_security="522c1542"; 
+</script>
+<script type="text/javascript" src="./gtrieScanner - Quick Discovery of Network Motifs_files/counter.js.download"></script>
+<noscript><div class="statcounter"><a title="tumblr visit
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/8208793/0/522c1542/1/"
+alt="tumblr visit counter"></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+
+
+
+</p></b></body></html>
