@@ -1,0 +1,3 @@
+[submodule "fanmod-cmd"]
+	path = fanmod-cmd
+	url = https://github.com/gabbage/fanmod-cmd
