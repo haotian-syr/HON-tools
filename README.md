@@ -32,7 +32,7 @@ Collection of tools for exploring higher-order networks. Follows are their origi
 | Tool | Link |
 | --- | ----------- |
 | HyperG | https://cran.r-project.org/web/packages/HyperG/ |
-| HyperNetX | DBLP:journals/corr/abs-2003-11782 |
+| HyperNetX | https://github.com/pnnl/HyperNetX |
 | GraphML | http://graphml.graphdrawing.org/index.html |
 | hypergraph | https://bioconductor.org/packages/3.15/bioc/html/hypergraph.html |
 | SimpleHypergraphs.jl | https://github.com/pszufe/SimpleHypergraphs.jl |
