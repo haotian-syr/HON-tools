@@ -13,3 +13,9 @@
 [submodule "modet"]
 	path = modet
 	url = https://github.com/sabyasachipatra/modet
+[submodule "simplicial"]
+	path = simplicial
+	url = https://github.com/simoninireland/simplicial
+[submodule "javaplex"]
+	path = javaplex
+	url = https://github.com/appliedtopology/javaplex
