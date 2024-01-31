@@ -1,23 +1,31 @@
 # HON-tools
 Collection of tools for exploring higher-order networks. Follows are their original links, we make copies in case some of them might be broken in the future. 
 # List of Motif Tools
-MFinder --https://www.weizmann.ac.il/mcb/UriAlon/download/ParTI
-<br/>
-MAVisto --https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/
-<br/>
-FANMOD --https://github.com/gabbage/fanmod-cmd/tree/e43d0acf8500d4116972cd049b5d5c3fc7f51037
-<br/>
-Grochow-Kellis --https://github.com/jptboy/CSCI3104_GC2/tree/f727f0762fe99587a530334970398cea75cfe364
-<br/>
-MODA --https://github.com/smbadiwe/ParaMODA/tree/a87227a1bb33adce5d901a6933ffa0c0067a4edc
-<br/>
-Kavosh --https://github.com/shmohammadi86/Kavosh/tree/f037a0b5a0aa1f1d6176d4e4a61fad0b438a7ac9
-<br/>
-G-Tries --https://www.dcc.fc.up.pt/gtries/
-<br/>
-TemporalMotif --http://snap.stanford.edu/temporal-motifs/
-<br/>
-MODET --https://github.com/sabyasachipatra/modet/tree/ac7a3aeca81b051d52f729b076e009509fd3bb58
+
+| Tool | Link |
+| --- | ----------- |
+| MFinder | https://www.weizmann.ac.il/mcb/UriAlon/download/ParTI |
+| MAVisto | https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/mavisto/ |
+| FANMOD | https://github.com/gabbage/fanmod-cmd |
+| Grochow–Kellis | https://github.com/jptboy/CSCI3104_GC2 |
+| MODA | https://github.com/smbadiwe/ParaMODA |
+| Kavosh | https://github.com/shmohammadi86/Kavosh |
+| G-Tries | https://www.dcc.fc.up.pt/gtries/ |
+| TemporalMotif | http://snap.stanford.edu/temporal-motifs/ |
+| MODET | https://github.com/sabyasachipatra/modet |
+
 # List of Simplicial Complex Tools
+| Tool | Link |
+| --- | ----------- |
+| Simplicial | https://simplicial.readthedocs.io/en/latest/ |
+| Javaplex | https://github.com/appliedtopology/javaplex |
+| Ripser | https://github.com/Ripser/ripser |
+| simplextree | https://github.com/peekxc/simplextree |
+| Simplicial.jl | https://github.com/nebneuron/Simplicial.jl |
+| simplicial-complex | https://www.npmjs.com/package/simplicial-complex |
+| Dionysus 2 | https://mrzv.org/software/dionysus2/ |
+| DIPHA | https://github.com/DIPHA/dipha |
+| Perseus | https://people.maths.ox.ac.uk/nanda/perseus/ |
+| Moise | https://www.math.drexel.edu/~ahicks/Moise/ |
 
 # List of Hypergraph Tools

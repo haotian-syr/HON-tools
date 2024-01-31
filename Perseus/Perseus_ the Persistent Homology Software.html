@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0044)https://people.maths.ox.ac.uk/nanda/perseus/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Perseus: the Persistent Homology Software </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" async="" src="./Perseus_ the Persistent Homology Software_files/ga.js.download"></script><script src="./Perseus_ the Persistent Homology Software_files/jquery.js.download" type="text/javascript"></script>
+<script src="./Perseus_ the Persistent Homology Software_files/vallenato.js.download" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="./Perseus_ the Persistent Homology Software_files/style.css" media="screen">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35696994-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body style="">
+
+
+<div id="main_container">
+	<div id="header">
+    	<div id="logo"><a href="https://people.maths.ox.ac.uk/nanda/index.html"><img src="./Perseus_ the Persistent Homology Software_files/toplogo-alt.png" alt="" title="" border="0" width="130px" height="40px"></a></div>
+    
+        <div id="menu">
+            <ul>                                                         
+                <li><a href="https://people.maths.ox.ac.uk/nanda/teaching.html" title=""><img src="./Perseus_ the Persistent Homology Software_files/teach-icon.png" width="30px" title="Teaching"></a></li>
+				<li><a href="https://people.maths.ox.ac.uk/nanda/papers.html" title=""><img src="./Perseus_ the Persistent Homology Software_files/papers-icon.png" width="30px" title="Papers"></a></li>
+				<li><a href="https://people.maths.ox.ac.uk/nanda/index.html" title=""><img src="./Perseus_ the Persistent Homology Software_files/home-icon.png" width="30px" title="Home"></a></li>             
+            </ul>
+        </div>
+    
+    </div>
+	
+	<div id="middle_box4">
+	</div>
+	
+	
+	
+	<div class="center_content">
+	<!--
+		<script>
+  (function() {
+    var cx = '016458384797155536042:xhzl2weg0pm';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+	-->
+	<div id="accordion-container">  
+					
+	
+					 <h1 class="cent"> The <b>Perseus</b> Software Project for Rapid Computation of Persistent Homology </h1>
+                    
+					
+					
+                     <h2 class="accordion-header active-header">Download or Compile</h2>
+                      
+					  <div class="accordion-content open-content" style="width: 888px; display: block;">
+					  
+					  <p class="tab">
+						Click on the icon for your operating system in order to download the suitable executable file. The current version is <b>4.0 Beta</b>.
+						</p>
+<table id="ftab">
+	<tbody><tr>
+		<td>Microsoft Windows XP and above</td>
+		<td>64 Bit</td>
+		<td><a href="https://people.maths.ox.ac.uk/nanda/source/perseusWin.exe"><img src="./Perseus_ the Persistent Homology Software_files/win_icon.jpeg" alt="PerseusWin"> </a></td>
+	</tr>
+	<tr class="alt">
+		<td>Linux (Ubuntu, Mint, Debian, SuSE,...)</td>
+		<td>64 Bit</td>
+		<td><a href="https://people.maths.ox.ac.uk/nanda/source/perseusLin"><img src="./Perseus_ the Persistent Homology Software_files/lin_icon.png" alt="PerseusLin"></a></td>
+	</tr>
+	<tr>
+		<td>Mac OS Tiger and up</td>
+		<td>64 Bit</td>
+		<td><a href="https://people.maths.ox.ac.uk/nanda/source/perseusMac"><img src="./Perseus_ the Persistent Homology Software_files/mac_icon.jpeg" alt="PerseusMac"></a></td>
+	</tr>
+</tbody></table>
+						<p class="tab">
+						Once you have the file corresponding to your operating system, see "Basic Information and Usage" below. If you'd prefer to compile the software from source yourself instead, keep reading.
+						</p>
+						
+						<p class="tab">
+						The source code is also available as a zipped file <a href="https://people.maths.ox.ac.uk/nanda/source/perseus_4_beta.zip"><b>here</b></a>. Download this to a directory where you have read/write permissions. You can now Use any C++ compiler to compile the main file <b>Pers.cpp</b>. The choice of compiler depends mainly on your operating system. Microsoft Windows users have various compiler options such as the open-source <a href="http://www.mingw.org/">mingw</a>, or the complete integrated development environment provided by the somewhat pricey <a href="http://www.microsoft.com/visualstudio/en-us">Microsoft Visual Studio</a>. Mac users will probably require a hefty <a href="http://developer.apple.com/xcode/">Xcode</a> download and installation on their systems. 
+						</p>
+						
+						<p class="tab">
+						If using the <a href="http://gcc.gnu.org/">gcc</a> compiler from the command line, just go to the directory with the extracted source files and type:</p>
+							
+						<p class="centered">	
+						<b> g++ Pers.cpp -O3 -fpermissive -o perseus  </b>
+						</p>
+					
+						<p class="tab">
+						Of course, you can replace "perseus" in the command above with any executable name of your choice. </p>
+						
+						<p class="tab"><b>Warning for New Users:</b> The current version may not be compatible with the <a href="http://clang.llvm.org/">Clang compiler</a> (default on new Macs). If things are not working out on your machine, please consider either downloading a precompiled file or installing a gcc compiler!
+						</p>
+						
+					<p class="tab">
+						To <b>report a bug</b> or to <b>suggest a new feature</b>, please send email by clicking <a href="mailto:vnanda@sas.upenn.edu"><b>here</b></a>. It would really help speed things up if your subject line contained the word "Perseus" in it somewhere!
+					</p>
+						
+					</div>	
+						
+						
+			<h2 class="accordion-header inactive-header"> Basic Information and Usage </h2>
+						
+						<div class="accordion-content" style="width: 888px;">
+						
+						<p class="tab">
+						Perseus computes the <a href="http://ncatlab.org/nlab/show/persistent+homology">persistent homology</a> of many different types of filtered cell complexes after first performing certain homology-preserving <a href="http://ncatlab.org/nlab/show/discrete+Morse+theory">Morse theoretic reductions</a>. In all cases, the user should prepare the input filtration as a correctly-formatted text file (see instructions for formatting below) and then read the output persistent homology intervals, again presented as text files.
+						</p>
+						
+						<p class="tab">
+						Since Perseus is based on <a href="http://en.wikipedia.org/wiki/Discrete_Morse_theory">discrete Morse theory</a>, it does not rely on the idiosyncracies of a particular type of complex structure or dimension for its efficiency. That being said, certain types of complexes are much more common than others in the realm of data analysis. For dealing with movies and images, it is best to work with <a href="http://inperc.com/wiki/index.php?title=Cubical_complex">cubical</a> data structures. On the other hand, if the data source is a manifold triangulation, then the appropriate representation consists of top-cell information on a <a href="http://en.wikipedia.org/wiki/Simplicial_complex">simplicial</a> complex. Point cloud data is usually handled effectively with <a href="http://en.wikipedia.org/wiki/Vietoris%E2%80%93Rips_complex">Vietoris-Rips</a> complexes built around those points.
+						</p>
+								
+						<p class="tab">
+						To actually compute persistent homology of your input filtered complex, you will need to enter the following command line arguments (without parentheses) in the given order, either directly into a terminal or using your integrated development environment. </p>
+						<ul>
+						<li> <b> (path to perseus executable) (complex type) (input filename) (output file string) </b> </li>
+						</ul>
+						<p class="tab">
+						The (output file string) is completely optional, it simply provides a prefix for the output files so that they will be easy to locate and identify. So for instance if you are working on project DeathStar, then making the output string DeathStar produces output files which have a prefix DeathStar followed by other stuff. To parse the generated output files, see the box titled "Understanding and Visualizing the Output" below. For more details on acceptable (complex type)s and how to format the respective (input file)s, click on the appropriate input format box below for information about cubical, simplicial and other types of input  complexes as well as simple examples for each complex type. Here is a little cheat-sheet with the most common complex types:
+						</p>
+						
+						<p class="indented">
+						 <b>cubtop</b>: for a dense cubical grid from top-level cube information. <br>
+						<b>scubtop</b>: for a sparse cubical grid from top-level cube information. <br>
+						<b>simtop</b>: for a simplicial complex from uniform top-level triangulation data. <br>
+						<b>nmfsimtop</b>: for a general simplicial complex from non-uniform top-level simplex information. <br>
+						<b>rips</b>: for a Vietoris-Rips complex from non-uniform birth point information. <br>
+						<b>brips</b>: for a Vietoris-Rips complex from uniform birth point information. <br>
+						<b>distmat</b>: for a Vietoris-Rips complex from a distance matrix. 
+						</p>
+						
+						
+						<p class="tab">
+						As you can see, Perseus is equipped to handle a diverse variety of input complexes, and it is not too difficult to add front-ends for reading in new complex types that are not already present in one of the boxes below. There is also no restriction on dimension except system memory: simplices of dimension 70 have <i>a lot</i> of faces and sub-faces! The boxes below explain how to format simple text files to create the desired input complexes for Perseus. It is important to follow the file format strictly, so please check the provided example files in case of confusion.	
+						</p>
+
+
+						<p class="tab">
+						<b>Warning</b>: While preparing your dataset for Perseus, you will most likely have occasion to enter "birth times" for various cells. In order to ensure that the software processes your complexes correctly, <b>please avoid using <i>0</i> as a birth time.</b>. Also <b>do not use floating-point numbers or negative numbers</b> for birth times (except <i>-1</i> which has a specific purpose).  Instead, just use <i>1, 2, 3,...</i> and so on.
+						</p>
+						
+         </div>
+		
+					 <h2 class="accordion-header inactive-header">Persistent Homology of <b>Cubical</b> Toplexes</h2>
+                       
+					   <div class="accordion-content" style="width: 888px;">
+							
+							<p class="tab">
+							A toplex is a cell complex which can be constructed from a list of top dimensional cells. So, a cubical toplex of dimension <i>d</i> is just a list of <i>d</i>-dimensional cubes. The faces and subfaces of these cubes are constructed automatically from the top-cube information provided by input files. A simple way to represent a full-dimensional cube is to provide the coordinate of its lexicographically minimal vertex, which we will call its <i>anchor</i>. So, a 3D cube anchored at the point <i>(a,b,c)</i> with integer coordinates must be the cube with vertices of the form <i>(a+i,b+j,c+k)</i> where <i>i, j</i> and <i>k</i> are only allowed to take the values 0 and 1.
+							</p>
+							<p class="tab">
+							Perseus is presently able to compute the persistent homology of the following types of cubical data:
+							</p>
+							<h2 class="sftwr"> Dense Cubical Grids </h2>
+								
+								<p class="tab">
+									A dense cubical grid of dimension <i>d</i> consists of integer-vertex cubes in <i>d</i>-dimensional Euclidean space. Each cube gets a birth-time, but if you are interested in computing the standard homology rather than the persistence then you can set all the birth times of cubes which appear to 1. <b>By convention, a birth time of -1 is reserved for cubes that are missing from the grid</b>. 
+								</p>
+								<p class="tab">
+									The file format is straightforward. The first line contains the dimension of the cubical grid, let's say <i>d</i>. The next <i>d</i> lines of the file indicate the grid size along that dimension. Of course, these must be non-negative numbers. So to enter information about a four dimensional grid of <i>100</i> by <i>30</i> by <i>50</i> by <i>12</i> cubes, the first five lines of your file must be <i>4, 100, 30, 50</i> and <i>12</i> in that order. The lines after that contain the integer birth times of all the cubes in lexicographical order of anchor points, with preference given to the dimensions in their chosen order.
+								</p>
+								
+							<a href="https://people.maths.ox.ac.uk/nanda/source/cubgrid.txt"><img src="./Perseus_ the Persistent Homology Software_files/downld.png" class="float-right"></a>
+								<p class="tab">								
+									 <a href="https://people.maths.ox.ac.uk/nanda/source/cubgrid.txt">Here</a> is an example text file containing a 2 dimensional <i>3</i> by <i>4</i> grid where the birth time of each 2D cube is the sum of the anchor coordinates, except in the case of the cube anchored at <i>(1,1)</i> which never appears in the complex at all and therefore gets a birth time of -1. Note that all indices start with 0 instead of 1. Here is an explanation of the numbers in this file:
+								</p>
+								
+								<p class="indented">
+								2 : this is the dimension of the cubical grid <br>
+								3 : this is the number of cubes along the first dimension <br>
+								4 : this is the number of cubes along the second dimension <br>
+								1 : this is the birth time of the 2D cube anchored at (0,0) <br>
+								2 : this is the birth time of the 2D cube anchored at (1,0) <br>
+								1 : this is the birth time of the 2D cube anchored at (2,0) <br>
+								2 : this is the birth time of the 2D cube anchored at (0,1) <br>
+								-1 : this indicates that there is no cube anchored at  at (1,1) <br>
+								2 : this is the birth time of the 2D cube anchored at (2,1)<br>
+								1 : this is the birth time of the 2D cube anchored at (0,2) <br>
+								... and so on!
+								</p>
+								
+								<p class="tab">
+								Each smaller dimensional cube automatically inherits the minimum birth time of all the higher dimensional cubes in its coboundary. Once you have an input file in the format above, here is how you invoke the compiled executable, which I am assuming is called "perseus". The key here is the moniker <b>cubtop</b>, which is short for "cubical toplex":</p>
+								<ul>
+									<li> <b> ./perseus <b>cubtop</b> (path to input file) (output file string) </b> </li>
+								</ul>
+								<p class="tab">
+								Since this data structure is internally stored as a contiguous array for constant-time access, each top cube which never shows up (i.e. is given a birth time of -1) wastes both memory and time. If there are many cubes that never appear, then it is better to use the sparse cubical grid input format which is described below.
+								</p>
+								
+												
+						<h2 class="sftwr"> Sparse Cubical Grids </h2>
+						
+						<p class="tab">
+							This complex format is appropriate for a cubical grid structure where a large fraction of the cubes are missing. For example, if we have a large (hollow) sphere or torus approximated by cubes, then we do not wish to have any cubes covering the hollow portions, so it would be very wasteful — an input file almost full of <i>-1</i>'s — if we used the dense cubical grid structure above. As a heuristic, say you want to compute the homology of the black region in some black and white pixellated image of size 1000 by 1000. If more than 70 percent of the total 1 million pixels are black, then it won't hurt to use the dense cubical grid format above. But if the number of black pixels is smaller than 70 percent, you should probably use the following sparse cubical grid implementation. 
+						</p>
+						
+						<a href="https://people.maths.ox.ac.uk/nanda/source/scubtop.txt"><img src="./Perseus_ the Persistent Homology Software_files/downld.png" class="float-right"></a>
+						
+						<p class="tab">
+						   The input file format is as follows. The first number is the desired dimension <i>d</i> of the cubes being described. After this, each cube is represented by <i>d+1</i> numbers separated by spaces: the first <i>d</i> numbers should be the coordinates of the cube's anchor (i.e., the lexicographically minimal vertex) and the final number should be the desired birth time for that cube. Again, <b>avoid using -1 as a birth time unless you want that cube to be completely ignored</b>, in which case there is no need to write it into the input file in the first place. <a href="https://people.maths.ox.ac.uk/nanda/source/scubtop.txt">Here</a> is a tiny example file which creates 4 cubes in dimension 3, and here is an explanation of the numbers in the example: 
+						</p>
+						
+						<p class="indented">
+						3: this is the dimension of the cubical grid <br>
+						1 3 4 2: this is the 3D cube anchored at (1,3,4) with birth time 2. <br>
+						2 12 -4 7: this is the 3D cube anchored at (2, 12, -4) with birth time 7. <br>
+						0 2 3 1: this is the 3D cube anchored at (0,2,3) with birth time 1. <br>
+						</p>
+						
+						<p class="tab">
+							Of course you can enter many more cubes. If you enter multiple cubes with the same anchor points and different birth times, only the first one will be considered and the rest ignored. In this example, you can see that the point (1,3,4) appears as a face of the first cube as well as the third cube. In this case it will be assigned the lower birth time of <i>1</i> from the third cube. If you are interested in computing standard homology instead of persistence, you can simply give all the cubes a birth time equal to <i>1</i>.
+						</p>
+						
+						<p class="tab">
+							Once you have an input file in the desired format, here is how you ask perseus to compute its persistent homology. Note the use of the keyword <b>scubtop</b> which stands for "sparse cubical toplex":</p>
+							
+								<ul>
+									<li> <b> ./perseus <b>scubtop</b> (path to input file) (output file string) </b> </li>
+								</ul>
+				</div>
+			
+			<h2 class="accordion-header inactive-header">Persistent Homology of <b>Simplicial</b> Toplexes</h2>
+			          
+					  <div class="accordion-content" style="width: 888px;">
+						
+						<p class="tab">
+						A simplicial toplex is a list of top-dimensional simplices from which face information is automatically extracted to build a usual <a href="http://en.wikipedia.org/wiki/Simplicial_complex">simplicial complex</a>. There are two possible cases of simplicial toplexes: one where there is a uniform top dimension for all simplices, and one where there are different top dimensions. 
+						</p>
+						<p class="tab">
+						Triangulating a <a href="http://en.wikipedia.org/wiki/Manifold">manifold</a> of dimension <i>d</i> always yields a simplicial complex with the uniform top dimension <i>d</i>. On the other hand, a general simplicial complex need not have a uniform dimension. For instance, the entire complex could consist of a <i>1</i>-simplex which shares a vertex with a <i>3</i>-simplex.
+						</p>
+						
+						<h2 class="sftwr"> Representing Simplices </h2>
+						
+						<p class="tab">
+						In order to prepare your simplicial complex for Perseus, you should first provide the ambient dimension of the vertices, which we will denote here by <i>n</i>. I strongly recommend that you simply index all present vertices by natural numbers in any order and then use "1" as the ambient dimension. This is not a necessary step, but it will make things very efficient in terms of both time and memory. In any case, a point of ambient dimension <i>n</i> is represented uniquely by its coordinates, which are simply an ordered collection of <i>n</i> floating point numbers. If you are using the natural-number-indexing idea, then each point is just a single natural number and there is no need to provide any coordinate information. 
+						</p>
+						
+						<p class="tab">
+						A simplex of dimension <i>d</i> is represented by a collection of <i>(d+1)</i> points, where each point is just a collection of <i>n</i> coordinates as above. So really, we need <i>n(d+1)</i> numbers per simplex. Here, for instance, is the 2-simplex determined by the vertices <i>(0.1, 3.4, 7.1), (2.4, -1.6, 0.4)</i> and <i>(13.5, -7.9, 1.0)</i>:
+						</p>
+						<p class="indented">
+						 0.1  3.4  7.1  2.4  -1.6  0.4  13.5  -7.9  1.0
+						</p>
+						<p class="tab">
+						You can scramble the order of the vertices to your liking, but of course it is a bad idea to change the order of a single vertex's coordinates. On the other hand, if we indexed the vertices by lexicographical order, then this simplex would be represented in the much more convenient format:
+						</p>
+						<p class="indented">
+						1 2 3
+						</p>
+						<p class="tab">
+						Perseus may be used to compute the persistent homology of the following types of simplicial complexes:
+						</p>
+						
+						
+						<h2 class="sftwr"> Uniform Triangulations </h2>
+						<p class="tab">
+						The file format for a simplicial toplex with uniform top dimension <i>d</i> is as follows. The first number of the file is <i>d</i>, the uniform top dimension. The next number is <i>n</i>, the number of coordinates for each vertex. Again, I highly recommend just labelling the points with natural numbers and setting <i>n = 1</i> as described above. Then each subsequent line contains <i>n(d+1)+1</i> numbers. The first <i>n(d+1)</i> of these are floating point numbers representing the vertices of a single simplex in any order as described above. The last number is an integer and corresponds to the birth time of that simplex. Again, please note that <b>simplices given a birth time of -1 will be ignored</b>. On the other hand, if you only want to compute ordinary non-persistent homology, give all the simplices a birth time of 1.
+						</p>
+						
+						<a href="https://people.maths.ox.ac.uk/nanda/source/simtop.txt"><img src="./Perseus_ the Persistent Homology Software_files/downld.png" class="float-right"></a>
+						
+						<p class="tab">
+						<a href="https://people.maths.ox.ac.uk/nanda/source/simtop.txt">Here</a> is a simple text file consisting of four 3-dimensional simplices whose vertices have two coordinates each. Here is an explanation of the numbers in this file: </p>
+
+						<p class="indented">
+						3: this is the dimension of the simplices, so each simplex has 3+1 = 4 vertices. <br>
+						2: this is the number of coordinates per vertex. <br>
+						0 0 0 1 1 0 1 1 1: this is the 3-simplex with vertices (0,0), (0,1), (1,0), (1,1) and birth time 1. <br>
+						and so on!
+						</p>
+						
+						<p class="tab">
+						To get Perseus to compute the persistent homology of your input file once it is prepared, just call it using the <b>simtop</b> keyword as follows:
+						</p>
+						<ul>
+									<li> <b> ./perseus <b>simtop</b> (path to input file) (output file string) </b> </li>
+						</ul>
+						
+						<h2 class="sftwr"> Non-Uniform Triangulations </h2>
+						
+						<p class="tab">
+						 Here we will consider the general case where the simplicial toplex does not have a uniform top dimension. Of course, the ambient dimension of the vertex points is still required to be constant throughout and we will still call it <i>n</i>. This will be the first number in the input file. The rest of the lines are dedicated to the vertices in the simplex. Again, I strongly recommend setting <i>n</i> to 1 and just labelling the vertices by the integers.
+						</p>
+												
+						<p class="tab">
+						Since there is no uniform dimension in the list of simplices, you will have to provide each simplex with its own dimension. The way to do this is quite straightforward: before entering in the coordinates of the vertices in your simplex, just put in an additional number <i>m</i> indicating the dimension of that simplex; this way the software knows that the next <i>n(m+1)</i> numbers in the file are coordinates of vertices of that particular simplex. Here, is an example (with the point dimension <i>n</i> equalling 3) of a 2D simplex with vertices <i>(0.1, 0.3, 7), (-2,8.1,0)</i> and <i>(8.9,-3,9.2)</i>, we assume that this simplex has birth time of 5, which is the last number as usual. Note the "2" right at the beginning of this line to indicate dimension. 
+						</p>
+						
+						<p class="indented">
+						2 0.1 0.3 7 -2 8.1 0 8.9 -3 9.2 5
+						</p>
+						
+						<a href="https://people.maths.ox.ac.uk/nanda/source/nmfst.txt"><img src="./Perseus_ the Persistent Homology Software_files/downld.png" class="float-right"></a>
+						
+						<p class="tab">
+						<a href="https://people.maths.ox.ac.uk/nanda/source/nmfst.txt">Here</a> is a text file consisting of a few simplices in various dimensions. The vertices are indexed with natural numbers (<i>n</i>=1), as indicated at the top of the file. Here is an explanation of some of the numbers in this file: </p>
+
+						<p class="indented">
+						1: this is the number of coordinates per vertex. <br>
+						2 1 3 5 1: this is the 2D simplex with vertices 1, 3 and 5; the birth time is 1.<br>
+						3 1 2 4 6 2 this is the 3D simplex with vertices 1, 2, 4 and 6; the birth time 2.<br>
+						6 1 2 3 4 5 6 7 4: 6D simplex, vertices 1 through 7. <br>
+						and so on.
+						</p>
+						
+						<p class="tab">
+							Note that it is possible to introduce various inconsistencies with this format. For instance, you can declare a simplex to have birth time 3 and then declare one of its faces to have birth time 10. In this case the birth of the face will be ruthlessly changed to 3 so that the filtration structure is preserved. No face is allowed to be born after its parent simplex. As usual, if you don't care about Persistence and simply want to compute the homology, just set all the birth times to 1 explicitly.
+						</p>
+						
+						<p class="tab">
+							To have Perseus compute the persistent homology of your complex once it has been encoded in a text file, use the non-manifold simplicial toplex keyword <b>nmfsimtop</b> as follows.</p>
+						<ul>
+									<li> <b> ./perseus <b>nmfsimtop</b> (path to input file) (output file string) </b> </li>
+						</ul>
+						
+						</div> 
+					 				
+		    <h2 class="accordion-header inactive-header">Persistent Homology of <b>Vietoris-Rips</b> Complexes</h2>
+                       
+					   <div class="accordion-content" style="width: 888px;">
+						<p class="tab">
+							The <a href="http://www.en.wikipedia.org/wiki/Vietoris-Rips_complex">Vietoris</a> complex is completely determined by the underlying 1-skeleton. This skeleton can be represented as a symmetric distance matrix where the entries come from pairwise distances between points in a point cloud, or from correlations and a variety of other sources. Perseus can compute the persistent homology of Vietoris complexes generated around three different types of data: uniform birth points, non-uniform birth points and distance matrices.
+                        </p>
+					
+						<h2 class="sftwr"> Points with Uniform Birth Times</h2>
+						<p class="tab">
+							This is the most common type of Vietoris Rips complex. The input is a list of vertices (i.e., points) embedded in some Euclidean space. For each vertex there is some initial radius <i>r</i>. The radius for each vertex is incremented <i>N</i> times by some universal step-size <i>s</i> to give us the increasing sequence <i>r, r+s, r+2s, r+3s, ..., r+Ns</i> of radii for each point (usually, one uses <i>r=0</i> for all the points, but this is not necessary). The correct picture here is to imagine growing balls of larger and larger radius around each vertex. Given two vertices, the edge between them is given a birth time equal to the first step number between <i>1</i> and <i>N</i> where their associated balls intersect. Of course, it is possible that the points are so far away and their initial radii so small that the balls around them do not intersect even when the radius is increased by an additive factor of <i>Ns</i>, and in this case no edge is introduced between these vertices.
+						</p>
+						
+						<p class="tab">
+							The input file for this type of complex is as follows. The first line is the ambient dimension <i>d</i> where the vertices live, i.e., the number of coordinates for each vertex. The next three numbers are, in order: an initial radius multiplier <i>k</i>, the universal step size <i>s</i> and the total number of steps <i>N</i>. The only new thing here is <i>k</i>: this is a quick way of scaling the radii associated to each vertex by a uniform factor. Almost always, you should just set <i>k=1</i>. If <i>k</i> equals <i>0.5</i> for instance, the initial radii of all the vertices will be halved. After <i>k, s</i> and <i>N</i> you can start entering vertex and initial radius information in the following format. 
+						</p>
+						
+						<a href="https://people.maths.ox.ac.uk/nanda/source/brips.txt"><img src="./Perseus_ the Persistent Homology Software_files/downld.png" class="float-right"></a>
+						
+						<p class="tab">
+							Enter <i>d+1</i> floating point numbers: the first <i>d</i> give the coordinates of the vertex and the last one (which must be non-negative, otherwise the vertex is ignored completely) is the initial radius <i>r</i> for that vertex. For instance, when <i>n=4</i>, then the line <i>2.3 4.5 -3.7 2.8 0.15</i> corresponds to the vertex <i>(2.3, 4.5, -3.7, 2.8)</i> with the initial radius <i>0.15</i>.  <a href="https://people.maths.ox.ac.uk/nanda/source/brips.txt">Here</a> is an example file. The numbers in this file are explained below:
+						</p>
+						
+						<p class="indented">
+							3: the ambient dimension, i.e., the number of coordinates per vertex.<br>
+							1 0.01 100: the radius scaling factor <i>k=1</i>, the step size <i>s=0.01</i>, the number of steps <i>N=100</i><br>
+							1.2 3.4 -0.9 0.5: the vertex (1.2, 3.4, -0.9) with associated radius r = 0.5<br>
+							2.0 -6.6 4.1 0.3: the vertex (2.0, -6.6, 4.1) with associated radius r = 0.3 <br>
+							and so on!
+						</p>
+						
+						<p class="tab">
+						And finally, to compute the persistent homology of this complex, use the <i>brips</i> keyword, like so:
+						</p>
+						<ul>
+									<li> <b> ./perseus <b>brips</b> (path to input file) (output file string) </b> </li>
+						</ul>
+						
+						<h2 class="sftwr"> Points with Different Birth Times</h2>
+						<p class="tab">
+						This type of Vietoris complex is created with vertex-radius-birth triples. Each vertex gets its own birth time and an associated radius. Two vertices get an edge between them if their corresponding balls of given radius intersect. This edge gets the maximum of the vertices' birth times. So, for instance, assume we have the vertex-radius-birth triples [(0,0,0); 1; 2] and [(0,1,1); 1; 3]. The distance between the vertices is about 1.414, and the sum of their radii is 2, so we know that there will be an edge between them. This edge gets the maximum birth time of these two vertices, which in this case is 3. Similarly, the 2D simplices get the maximum birth times of the edges in their boundaries, and so forth.
+						</p>
+						
+						<a href="https://people.maths.ox.ac.uk/nanda/source/rips.txt"><img src="./Perseus_ the Persistent Homology Software_files/downld.png" class="float-right"></a>
+						
+						<p class="tab">
+						The file format is straightforward, as follows. The first number <i>n</i> is the embedding dimension of the vertices, i.e., the number of coordinates per vertex. Each subsequent line consists of <i>n</i> floating-point coordinates for a vertex followed by a non-negative floating point radius and an integer birth. As usual, <b> vertices with birth equalling -1 will be ignored</b>! <a href="https://people.maths.ox.ac.uk/nanda/source/rips.txt">Here</a> is a tiny example file where the numbers are arranged as explained below:
+						</p>
+						
+						<p class="indented">
+							2: this is the ambient dimension, i.e. the number of coordinates per vertex <br>
+							0.1 0.1 .52 1: the vertex (0.1,0.1) with radius 0.52 and birth 1. <br>
+							-0.2 0.1 .51 3: the vertex (-0.2,0.1) with radius 0.51 and birth 3. <br>
+							et-cetera.
+						</p>
+
+						<p class="tab">
+						To compute the persistent homology of this complex, the <b>rips</b> keyword must be used for complex type:
+						</p>
+						<ul>
+									<li> <b> ./perseus <b>rips</b> (path to input file) (output file string) </b> </li>
+						</ul>
+						
+						<h2 class="sftwr"> Distance and Correlation Matrices </h2>
+						
+						<p class="tab">
+							Sometimes it is unfeasible to get a point sample embedded it in some Euclidean space. What we might have instead is a symmetric distance matrix where the <i>(i,j)</i>-th entry records the distance between the <i>i</i> and <i>j</i>-th points directly without providing any information about the location of said points. Another related approach is to record the correlations of pairs of events, in which case the notion of points and distances between them doesn't even make sense. </p>
+						
+						<p class="tab">
+							In either case, it is still possible to build a Vietoris-Rips complex directly without any information about the points. In fact, one of the biggest advantages of the Vietoris-Rips complex over its rival <a href="http://en.wikipedia.org/wiki/Nerve_of_a_covering"> Čech</a> and <a href="http://biogeometry.duke.edu/software/alphashapes/math.html">Alpha</a> complexes — aside from its efficient computability — is the fact that it can be built from a distance matrix rather than point locations. These advantages come at a price: there is no analogue of the <a href="http://ncatlab.org/nlab/show/nerve+theorem">nerve lemma</a> for Vietoris-Rips complexes.</p>
+						
+						<p class="tab">
+							To create a suitable input file for Perseus, first provide the size <i>M</i> of your distance matrix. Note that the matrix must be square, so only one number is necessary: simply write <i>10</i> for a <i>10</i> by <i>10</i> matrix. Next, provide a minimal threshold distance <i>g</i> which has the following meaning: any two points that are a distance less than <i>g</i> apart get an edge between them born at time zero. So, to disconnect all distinct points initially, you must set <i>g</i> to zero. The next numbers are the step size <i>s</i> as before followed by <i>N</i>, the number of steps. Thus, an edge is born at step <i>n</i> between two vertices if <i>n</i> is the smallest number between <i>1</i> and <i>N</i> so that the augmented threshold <i>ns + g</i> at the <i>n</i>-th step exceeds the pairwise distance between these vertices as encoded in the input matrix. Of course if <i>n</i> is larger than the total number of steps <i>N</i> then that edge is never created. Finally, you should enter a positive natural number <i>C</i> which caps the total dimension of the complex. No simplices of dimension strictly larger than <i>C</i> will be constructed. This is done for computational reasons: if the features of interest are low dimensional, then there is no need to waste time and memory building higher dimensional complexes. 
+						</p>
+						
+						<a href="https://people.maths.ox.ac.uk/nanda/source/distmat.txt"><img src="./Perseus_ the Persistent Homology Software_files/downld.png" class="float-right"></a>
+						
+						<p class="tab">
+							Finally, insert <i>M</i>-squared floating point 
+numbers indicating the entries of a distance matrix. The diagonal entries should be zero, since they represent 
+the 
+distance from each point to itself.  <a href="https://people.maths.ox.ac.uk/nanda/source/distmat.txt">Here</a> is a file containing a tiny 
+example (with <i>M = 3</i>) along with an explanation of the numbers.
+						</p>
+						
+						<p class="indented">
+							3: this is the number of rows/columns in the symmetric distance matrix <br>
+							0.1 0.2 5 2: initial threshold distance g = 0.1, step size s = 0.2, number of steps N = 5 and dimension cap C = 2 <br>
+							0 0.26 0.4: distance from entry 1 to itself, entry 2, entry 3 <br>
+							0.26 0 2.1: distance from entry 2 to entry 1, itself and entry 3, <br>
+							0.4 2.1 0: etc.
+						</p>
+						<p class="tab">
+						If instead of distances we were using correlations between event pairs, then the effective "distance" would be (1 - correlation) where correlation is the number read from the file. There is no need to explicitly change your data entries in this case, Perseus also accepts correlation input directly and performs the (1 - stuff) calculation itself as explained below.
+						</p>
+						<p class="tab">
+						To compute the persistent homology for such input, the <b>distmat</b> or <b>corrmat</b> keywords must be used as the complex type:
+						</p>
+						<ul>
+									<li> <b> ./perseus <b>distmat</b> (path to input distance matrix file) (output file string) </b> </li>
+									<li> <b> ./perseus <b>corrmat</b> (path to input correlation matrix file) (output file string) </b> </li>					
+						</ul>					
+					</div>
+					
+		   <h2 class="accordion-header inactive-header">Visualizing the Output: Persistent Homology via Intervals</h2>
+           			   <div class="accordion-content" style="width: 888px;">
+					   
+					   <a href="http://www.math.upenn.edu/~ghrist/notes.html"><img src="./Perseus_ the Persistent Homology Software_files/EATbook.jpg" class="float-right" alt="Ghrist-EAT" width="120" height="165"></a>
+						<p class="tab">
+						This section assumes prior familiarity with the notion of
+barcodes, and/or persistence diagrams and persistence intervals. Please check the excellent survey papers 
+by <a href="http://comptop.stanford.edu/u/preprints/topologyAndData.pdf"><b>Carlsson</b></a>  and <a href="http://www.math.upenn.edu/~ghrist/preprints/barcodes.pdf"><b>Ghrist</b></a> if you are unfamiliar 
+with these terms. An even more elementary account of simplicial complexes, their geometry, and what homology
+actually measures can be found in <a href="https://people.maths.ox.ac.uk/nanda/source/PersBio.pdf"><b>my introductory paper</b></a> written 
+with Sazdanovic. For a much more comprehensive (but elementary!) overview of applied topology, consult
+<a href="http://www.math.upenn.edu/~ghrist/notes.html"><b>Rob Ghrist's book</b></a>. 
+</p>
+
+<p class="tab">Note that computing persistence diagrams requires us to work over a field, 
+and <b>all the output of Perseus assumes mod-<i>2</i> coefficients</b>. 
+						</p>
+						
+						<h2 class="sftwr">Output Text Files</h2>
+						<p class="tab">
+						The main output of Perseus is a collection of text files containing persistence intervals for each dimension. These files are named according to the (output file string) entered in the command line when calling the software. Note that it is possible to include an entire file path the output file string. For instance, if you use "<i>C:\users\myName\myOutput\result"</i> on Windows or "<i>/home/MyName/myOutput/result</i>" on Mac or Unix type systems, then the output files will be created in the corresponding myOutput directories and will all have file-names prefixed by "result". Of course, it is important that you have the appropriate writing privileges in the desired output directory. In case no output file string is used, the default choice is "<b>output</b>" and the output files will be created with this prefix in the current working directory. Please note that if a file with that name already exists in this directory, <i>it will be over-written</i>!
+                        </p>
+						
+						<p class="tab">
+						Assuming that the default string "output" is being used, the output files created will be called <i>output_0.txt, output_1.txt,...</i> and so on. How many such files are created depends on how many dimensions the discrete Morse-reduced complex actually has; this is always less than or equal to the dimension of the original complex which has been used as input. It is possible that the reduced version of a 3 dimensional complex is only 2 dimensional, in which case <i>output_3.txt</i> will not be created. 
+						</p>
+						<p class="tab">
+						Each file of the type <i>output_n.txt</i> contains the persistence intervals corresponding to <i>n</i>-dimensional generators of homology. These intervals are arranged in two columns of integers, where the first entry gives the birth time and the second entry gives the death. Please note that <b>a death time of -1 corresponds to infinite persistence</b>, meaning that the corresponding generating cycle persisted past the end of the filtration and did not get filled-in as a boundary even when all the cells of the underlying complex had been added.
+						</p>
+						<p class="tab">
+						Finally, the file named "<b>output_betti.txt</b> contains the Betti numbers at each step in the filtration. A typical line of this file looks like
+						</p>
+						<p class="indented">
+						12 14 4 7 0
+						</p>
+						<p class="tab">
+						which indicates that when all the cells with birth time less 
+than or equal to 12 are included, then there are 14 connected components, 4 tunnels, 7 cavities and no 
+higher dimensional generators of homology. The numbers 14, 4 and 7 in this context are called the zeroth, 
+first and second Betti numbers of the 12-th subcomplex in the persistence filtration.
+						</p>
+						
+						<h2 class="sftwr">Plotting Persistence Diagrams</h2>
+						
+						<p class="tab">
+						In order to aid visualization, a simple <a href="http://www.mathworks.com/products/matlab/">Matlab</a> script called <a href="https://people.maths.ox.ac.uk/nanda/source/persdia.m">persdia</a> has been bundled along with the source code for Perseus. This script may be called from the Matlab command prompt to plot the Perseus output file as a persistence diagram in the following way:			
+						</p>
+						
+						<ul>
+							<li><b> &gt;&gt; persdia('output_1.txt'); </b></li>
+						</ul>
+						
+						<p class="tab">
+						Of course, you may need to change the string argument '<i>output_1.txt</i>' to point to the path where the output files from Perseus are stored on your computer. Here is a sample persistence diagram created by persdia:
+						</p>
+						
+						<p class="centered"><img src="./Perseus_ the Persistent Homology Software_files/samplepd.png" width="100%"></p>
+						<p class="tab">
+						The <font color="green">green</font> line is the diagonal and the typical (<b>birth,death</b>) type points are plotted in <font color="blue">blue</font>. Points with infinite persistence (meaning, those which have a death equalling -1 in the Perseus output file) are plotted as <font color="red">red diamonds</font> above their birth times. 
+						</p>
+                       </div>
+						           
+	       <h2 class="accordion-header inactive-header">Software License and Citations</h2>
+                       <div class="accordion-content" style="width: 888px;">
+
+			<p class="tab">
+			Perseus is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published <a href="http://www.gnu.org/licenses/gpl.html">here</a> by
+    the Free Software Foundation. This program is distributed in the hope that it will be useful,
+    but <b>without any warranty</b>; without even the implied warranty of
+    <b>merchantability</b> or <b>fitness for a particular purpose</b>.  See the
+    GNU General Public License for more details.
+
+			</p>
+
+			
+					   <p class="tab">
+					   If Perseus was useful in your research work, please cite it! The following <a href="https://people.maths.ox.ac.uk/nanda/source/DMPers-Final.pdf">paper</a> contains the main ideas from which the Morse-theoretic simplification engine of Perseus is derived:
+					   </p><hr>
+					   <p class="tab">
+							Konstantin Mischaikow and Vidit Nanda. Morse Theory for Filtrations and Efficient Computation of Persistent Homology. <i>Discrete &amp; Computational Geometry</i>, Volume 50, Issue 2, pp 330-353, September 2013. </p>
+						<hr>
+						<p></p>
+						<p class="tab">
+							And if you also want to cite the software itself, please use the following:
+							</p><hr>
+							<p class="tab">
+								Vidit Nanda. Perseus, the Persistent Homology Software. http://www.sas.upenn.edu/~vnanda/perseus, Accessed DD/MM/YY.
+							</p>
+							<hr>
+							<p class="tab">
+								And finally, you might want to try locating yourself on this map which highlights those parts of the world where Perseus was recently downloaded:
+							</p>
+							<p class="centered"><img src="./Perseus_ the Persistent Homology Software_files/PersUsers.png" width="100%"></p>
+						
+				</div>	   
+			   
+     </div>
+
+       
+	</div>	
+</div>
+	
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8541486; 
+var sc_invisible=1; 
+var sc_security="f279a56d"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost +
+"statcounter.com/counter/counter.js'></"+"script>");</script><script type="text/javascript" src="./Perseus_ the Persistent Homology Software_files/counter.js.download"></script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/8541486/0/f279a56d/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+
+	
+</body></html>

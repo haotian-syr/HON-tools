@@ -1,0 +1,3 @@
+var develVersion = "3.19";
+var releaseVersion="3.18";
+var versions = ["3.18","3.19"];
