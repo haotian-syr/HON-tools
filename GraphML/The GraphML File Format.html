@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0042)http://graphml.graphdrawing.org/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>The GraphML File Format</title>
+  <link href="./The GraphML File Format_files/style.css" type="text/css" rel="stylesheet">
+</head>
+<body vlink="#ff00ff" alink="#00ff00" link="#0000ff" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+<center>
+<table cellspacing="0" cellpadding="3" border="0">
+  <tbody>
+    <tr>
+      <td colspan="3">
+      <h1>The GraphML File Format</h1>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="#00008b" align="center" colspan="3">
+      <table cellpadding="2" border="0">
+        <tbody>
+          <tr>
+            <td bgcolor="#ffffff">&nbsp;<a class="selected" href="http://graphml.graphdrawing.org/index.html">Home</a>&nbsp;</td>
+            <td>&nbsp;<a class="menu" href="http://graphml.graphdrawing.org/download.html">Download</a>&nbsp;</td>
+            <td>&nbsp;<a class="menu" href="http://graphml.graphdrawing.org/specification.html">Specification</a>&nbsp;</td>
+            <td>&nbsp;<a class="menu" href="http://graphml.graphdrawing.org/about.html">About</a>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"><img alt="" height="3" src="./The GraphML File Format_files/void.gif"></td>
+    </tr>
+    <tr>
+      <td valign="top" bgcolor="#00008b" width="150"><table bgcolor="#aaaaff" cellpadding="1" cellspacing="2" border="0">
+  <tbody><tr>
+    <th align="left" bgcolor="#00008b"><font color="#ffffff">Links:</font></th>
+  </tr>
+  <tr>
+    <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">File Format Links</font></th>
+  </tr>
+  <tr>
+    <td><font size="-1"> <font size="-1"><strong><a href="http://www.gupro.de/GXL/">GXL</a></strong> - </font> an XML-based graph exchange format developed for software re-engineering.<br>
+          <br>
+          <font size="-1"><strong><a href="http://www.fmi.uni-passau.de/Graphlet/GML/">GML</a></strong> - </font> a widely used graph exchange format (non-XML).<br>
+          <br>
+          <font size="-1"><strong><a href="http://www.cs.rpi.edu/~puninj/XGMML/">XGMML</a></strong> - </font> an XML-based file format for graphs based on GML.<br>
+          <br>
+          <font size="-1"><strong><a href="http://www.w3.org/Graphics/SVG/">SVG</a></strong> - </font> an XML-based graphics format.<br>
+          <br>
+    </font></td>
+  </tr>
+  <tr>
+    <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">Graph Drawing Links</font></th>
+  </tr>
+  <tr>
+    <td><font size="-1"> <font size="-1"><strong><a href="http://www.graphdrawing.org/">graphdrawing.org</a></strong> - </font> home of graph drawing<br>
+          <br>
+          <font size="-1"><strong><a href="http://www.graphdrawing.org/gd2010/">GD 2010</a></strong> - </font> 18th Intl. Symp. Graph Drawing, 21-24 Sep 2010, Konstanz, Germany<br>
+          <br>
+    </font></td>
+  </tr>
+  <tr>
+    <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">XML Links</font></th>
+  </tr>
+  <tr>
+    <td><font size="-1"> <font size="-1"><strong><a href="http://www.w3.org/XML/">XML</a></strong> - </font> home of the E<b>x</b>tensible <b>M</b>arkup <b>L</b>anguage at the <a href="http://www.w3.org/">World Wide Web Consortium</a>.<br>
+          <br>
+    </font></td>
+  </tr>
+</tbody></table>
+<br>
+      </td>
+      <td valign="top" width="500">
+<h2>What is GraphML?</h2>
+<p> GraphML is a comprehensive and easy-to-use file format for
+graphs. It consists of a language core to describe the structural
+properties of a graph and a flexible extension mechanism to add
+application-specific data. Its main features include support of </p>
+<ul>
+  <li>directed, undirected, and mixed graphs,</li>
+  <li>hypergraphs,</li>
+  <li>hierarchical graphs,</li>
+  <li>graphical representations,</li>
+  <li>references to external data,</li>
+  <li>application-specific attribute data, and</li>
+  <li>light-weight parsers.</li>
+</ul>
+<p> Unlike many other file formats for graphs, GraphML does not
+use a custom syntax. Instead, it is based on <a href="http://www.w3.org/XML/">XML</a> and hence ideally suited as a
+common denominator for all kinds of services generating, archiving, or
+processing graphs. </p>
+
+<h2>Getting Started</h2>
+<p> An easy introduction to GraphML is the <a target="_new" href="http://graphml.graphdrawing.org/primer/graphml-primer.html">GraphML
+Primer</a>. <br>
+GraphML Primer is a non-normative document intended to provide an
+easily readable description of the GraphML facilities, and is oriented
+towards quickly understanding how to create GraphML documents.
+ <br>
+
+For normative references see the <a href="http://graphml.graphdrawing.org/specification.html">GraphML
+Specification</a>. </p>
+
+<h2>Licensing</h2>
+<p>
+GraphML is intended to be a service to the community.  It may be used
+free of charge in scientific and commercial software alike.
+</p>
+<center>
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="./The GraphML File Format_files/88x31.png"></a> GraphML Working Group
+<br>This work is licensed under a 
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.
+</center>
+
+<h2>Background</h2>
+<p> Work on GraphML was initiated in a <a target="_new" href="http://www.cs.virginia.edu/%7Egd2000/gd-satellite.html">workshop</a>
+during the 2000 Graph
+Drawing Symposium in Williamsburg, and a proposal for the structural
+layer was presented at the <a target="_new" href="http://www.ads.tuwien.ac.at/gd2001/">2001 Graph Drawing Symposium</a>
+in Vienna. </p>
+<p> Since then, extensions have been provided that support basic
+attribute data types and the embedding of information for light-weight
+parsers. The next major steps will be extensions for abstract graph
+layout information and templates to transform such information into a
+variety of graphics formats. </p>
+<p> Software to help add GraphML support to several popular tools
+and libraries is under development. </p>
+
+<br>
+      </td>
+      <td valign="top" bgcolor="#00008b" width="150"><table bgcolor="#aaaaff" cellpadding="1" cellspacing="2" border="0">
+  <tbody>
+    <tr>
+      <th align="left" bgcolor="#00008b"><font color="#ffffff">News:</font></th>
+    </tr>
+    <tr>
+      <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">05
+April 2007</font></th>
+    </tr>
+    <tr>
+      <td><font size="-1"> Licensing status clarified: GraphML is free for everyone.</font></td>
+    </tr><tr>
+      <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">22
+February 2007</font></th>
+    </tr>
+    <tr>
+      <td><font size="-1"> GraphML 1.0 schema inclusion altered to avoid
+problems with some parsers.</font></td>
+    </tr><tr>
+      <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">03
+August 2004</font></th>
+    </tr>
+    <tr>
+      <td><font size="-1"> LEDA extension package for GraphML (release
+candidate).<br>
+Download <a href="http://graphml.graphdrawing.org/download/graphml_lep.zip">graphml_lep.zip</a> </font></td>
+    </tr>
+    <tr>
+      <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">01
+June 2004</font></th>
+    </tr>
+    <tr>
+      <td><font size="-1"> <a target="_new" href="http://graphml.graphdrawing.org/primer/graphml-primer.html">GraphML
+Primer</a>
+released. </font></td>
+    </tr>
+    <tr>
+      <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">18
+March 2003</font></th>
+    </tr>
+    <tr>
+      <td><font size="-1"> XML Schema specification and documentation
+available for GraphML 1.0rc (release candidate) </font></td>
+    </tr>
+    <tr>
+      <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">23
+July 2002</font></th>
+    </tr>
+    <tr>
+      <td><font size="-1"> GraphML presentation at the <a href="http://www.dfg-schwerpunkt-1126.de/veranstaltungen/jk2002.php">annual
+meeting</a> of DFG Research Priority 1126 <a href="http://www.dfg-schwerpunkt-1126.de/">Algorithmic Aspects of Large
+and Complex Networks</a>. (<a href="http://graphml.graphdrawing.org/publications/dfg02.ps">ps</a>, <a href="http://graphml.graphdrawing.org/publications/dfg02.pdf">pdf</a>) </font></td>
+    </tr>
+    <tr>
+      <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">28
+June 2002</font></th>
+    </tr>
+    <tr>
+      <td><font size="-1"> <a href="http://www.yworks.de/en/products_yfiles_ep_graphml.htm">yFiles</a>
+extension package for GraphML version&nbsp;1.0 released. </font></td>
+    </tr>
+    <tr>
+      <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">22
+May 2002</font></th>
+    </tr>
+    <tr>
+      <td><font size="-1"> Release candidates for extensions <i>graphml-attributes</i>
+(for data attributes) and <i>graphml-parseinfo</i> (for lightweight
+parsers) completed. See current <a href="http://graphml.graphdrawing.org/specification.html">specification</a>.
+      </font></td>
+    </tr>
+    <tr>
+      <th align="left" bgcolor="#00008b"><font size="-1" color="#ffffff">12
+March 2002</font></th>
+    </tr>
+    <tr>
+      <td><font size="-1"> GraphML proposed as the standard format for
+the network data archive to be created within EU FET Open Project <a href="http://www.cosin.org/">COSIN</a>. </font></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+    <tr>
+      <td bgcolor="#00008b"><img height="2" alt="" src="./The GraphML File Format_files/void.gif"></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+<a href="http://validator.w3.org/check?uri=referer">
+  <img border="0" src="./The GraphML File Format_files/valid-html401" alt="Valid HTML 4.01!" height="31" width="88"></a>
+</p>
+<div class="footer">
+<p> © by the GraphML Team - 2001-2007 </p>
+</div>
+Last update:
+Thursday, 24-Jan-2019 19:22:23 CET
+</center>
+
+
+</body></html>

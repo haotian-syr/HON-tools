@@ -1,0 +1,110 @@
+BODY {
+    font-family: Georgia, Times, "New York", serif; 
+    background: white;
+    color: black;
+}
+CODE {
+    font-family: Courier, Monaco, monospace;
+}
+PRE {
+    font-family: Courier, Monaco, monospace;
+}
+H1, H2, H3, H4, H5, H6 {
+    font-family: Verdana, Arial, Helvetica, Geneva, SunSans-Regular, sans-serif;
+}
+
+
+.footer {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+}
+
+body {
+  background: white;
+  color: black
+}
+
+h1 {
+  color: #00008b;
+  background: transparent;
+  font-weight: bold;
+  font-size: 20pt;
+  text-align: center
+}
+
+h2 {
+  color: #00008b;
+  background: transparent;
+  font-size: 18pt;
+  font-weight: bold
+}
+
+h3 {
+  color: #ffffff;
+  background: #00008b;
+  font-size: 16pt;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-weight: bold
+}
+
+h4 {
+  color: #00008b;
+  font-size: 14pt;
+  margin-left: 4%;
+  margin-right: 4%
+}
+
+h5 {
+  color: #00008b;
+  font-size: 12pt;
+  margin-left: 6%;
+  margin-right: 6%;
+  font-weight: bold
+}
+
+
+.name {
+  font-style: italic;  
+}
+
+a {
+  color: #00008b;
+}
+
+.menu {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none
+}
+
+.selected {
+  color: #00008b;
+  font-weight: bold;
+  text-decoration: none
+}
+
+.anchor {
+  color: #000000;
+}
+
+p {
+  margin-left: 6%;
+  margin-right: 6%
+}
+
+pre {
+  font-size: 10pt;
+  margin-left: 6%;
+  margin-right: 6%
+}
+
+ul, ol, dl {
+  margin-left: 8%;
+  margin-right: 6%;
+}
+
+dt {
+    font-weight: bold;
+}
