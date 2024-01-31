@@ -15,24 +15,17 @@ Collection of tools for exploring higher-order networks. Follows are their origi
 | MODET | https://github.com/sabyasachipatra/modet |
 
 # List of Simplicial Complex Tools
-Simplicial --https://simplicial.readthedocs.io/en/latest/
-<br/>
-Javaplex --https://github.com/appliedtopology/javaplex
-<br/>
-Ripser --https://github.com/Ripser/ripser
-<br/>
-simplextree --https://github.com/peekxc/simplextree
-<br/>
-Simplicial.jl --https://github.com/nebneuron/Simplicial.jl
-<br/>
-simplicial-complex --https://www.npmjs.com/package/simplicial-complex
-<br/>
-Dionysus 2 --https://mrzv.org/software/dionysus2/
-<br/>
-DIPHA --https://github.com/DIPHA/dipha
-<br/>
-Perseus --https://people.maths.ox.ac.uk/nanda/perseus/
-<br/>
-Moise --https://www.math.drexel.edu/~ahicks/Moise/
+| Tool | Link |
+| --- | ----------- |
+| Simplicial | https://simplicial.readthedocs.io/en/latest/ |
+| Javaplex | https://github.com/appliedtopology/javaplex |
+| Ripser | https://github.com/Ripser/ripser |
+| simplextree | https://github.com/peekxc/simplextree |
+| Simplicial.jl | https://github.com/nebneuron/Simplicial.jl |
+| simplicial-complex | https://www.npmjs.com/package/simplicial-complex |
+| Dionysus 2 | https://mrzv.org/software/dionysus2/ |
+| DIPHA | https://github.com/DIPHA/dipha |
+| Perseus | https://people.maths.ox.ac.uk/nanda/perseus/ |
+| Moise | https://www.math.drexel.edu/~ahicks/Moise/ |
 
 # List of Hypergraph Tools
