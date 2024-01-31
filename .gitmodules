@@ -37,3 +37,24 @@
 [submodule "dionysus"]
 	path = dionysus
 	url = https://github.com/mrzv/dionysus
+[submodule "HyperNetX"]
+	path = HyperNetX
+	url = https://github.com/pnnl/HyperNetX
+[submodule "SimpleHypergraphs.jl"]
+	path = SimpleHypergraphs.jl
+	url = https://github.com/pszufe/SimpleHypergraphs.jl
+[submodule "halp"]
+	path = halp
+	url = https://github.com/Murali-group/halp
+[submodule "kahypar"]
+	path = kahypar
+	url = https://github.com/kahypar/kahypar
+[submodule "tensorly"]
+	path = tensorly
+	url = https://github.com/tensorly/tensorly
+[submodule "Tensors.jl"]
+	path = Tensors.jl
+	url = https://github.com/Ferrite-FEM/Tensors.jl
+[submodule "rTensor"]
+	path = rTensor
+	url = https://github.com/rikenbit/rTensor
