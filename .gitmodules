@@ -19,3 +19,15 @@
 [submodule "javaplex"]
 	path = javaplex
 	url = https://github.com/appliedtopology/javaplex
+[submodule "ripser"]
+	path = ripser
+	url = https://github.com/Ripser/ripser
+[submodule "simplextree"]
+	path = simplextree
+	url = https://github.com/peekxc/simplextree
+[submodule "Simplicial.jl"]
+	path = Simplicial.jl
+	url = https://github.com/nebneuron/Simplicial.jl
+[submodule "dipha"]
+	path = dipha
+	url = https://github.com/DIPHA/dipha
