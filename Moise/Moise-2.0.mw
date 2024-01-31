@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Worksheet>
+<Version major="7" minor="1"/>
+<Label-Scheme value="2" prefix=""/>
+<View-Properties presentation="false"><Zoom percentage="150"/></View-Properties>
+<MapleNet-Properties warnlevel="3" longdelim="true" plotoptions="" echo="1" errorcursor="false" elisiontermsthreshold="10000" elisiontermsbefore="100" errorbreak="1" prettyprint="3" prompt="&gt; " latexwidth="6.0" useclientjvm="true" ansi="false" screenheight="25" labelwidth="20" plotdevice="inline" typesetting="standard" displayprecision="-1" indentamount="4" elisiondigitsthreshold="10000" quiet="false" plotoutput="terminal" rtablesize="10" preplot="" showassumed="1" plotdriver="openviz" elisiontermsafter="100" labelling="true" postplot="" screenwidth="79" elisiondigitsbefore="100" elisiondigitsafter="100" verboseproc="1" imaginaryunit="I" ShowLabels="true"/>
+<Styles><Font name="Heading 4" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Ordered List 1" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle272" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle275" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle306" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true"/>
+<Font name="_cstyle303" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Text" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Diagnostic" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[40,120,40]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle273" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle282" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true"/>
+<Font name="_cstyle308" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Page Number" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="10" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle270" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle301" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Ordered List 3" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Normal" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Maple Input" background="[0,0,0]" bold="true" executable="true" family="Monospaced" foreground="[255,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Heading 3" background="[255,255,255]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="14" subscript="false" superscript="false" underline="false"/>
+<Font name="_pstyle259" background="[0,0,0]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle265" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle293" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle266" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="ParagraphStyle2" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle304" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="2D Input" background="[255,255,255]" bold="false" executable="true" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Maple Input Placeholder" background="[255,255,255]" bold="true" executable="true" family="Monospaced" foreground="[200,0,200]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="2D Math" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Error" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Heading 1" background="[255,255,255]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false"/>
+<Font name="Title" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false"/>
+<Font name="Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[0,128,128]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true"/>
+<Font name="_cstyle268" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Ordered List 5" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle261" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Text Output" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Bullet Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle310" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Equation Label" background="[255,255,255]" bold="true" executable="false" family="Monospaced" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Author" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="ParagraphStyle1" background="[0,0,0]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="24" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle258" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle260" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Heading 2" background="[255,255,255]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="16" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle259" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Maple Plot" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle267" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle309" background="[0,0,0]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="24" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle296" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle274" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true"/>
+<Font name="_cstyle279" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="2D Output" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,255]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle264" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Dictionary Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[147,0,15]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true"/>
+<Font name="_cstyle257" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle307" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false"/>
+<Font name="Dash Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Ordered List 4" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle276" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true"/>
+<Font name="_cstyle302" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="10" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle284" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Maple Output" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="List Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Line Printed Output" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle281" background="[0,0,0]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="24" subscript="false" superscript="false" underline="false"/>
+<Font name="Warning" background="[0,0,0]" bold="false" executable="false" family="Monospaced" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="10" subscript="false" superscript="false" underline="false"/>
+<Font name="_cstyle283" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true"/>
+<Font name="_cstyle256" background="[0,0,0]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="24" subscript="false" superscript="false" underline="true"/>
+<Font name="_cstyle263" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Font name="Ordered List 2" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false"/>
+<Layout name="Heading 4" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Ordered List 5" alignment="left" bullet="ROMAN" firstindent="0" leftmargin="144" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1"/>
+<Layout name="Ordered List 1" alignment="left" bullet="numeric" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1"/>
+<Layout name="Text Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="newline" pagebreak-before="false" initial="0"/>
+<Layout name="Bullet Item" alignment="left" bullet="dot" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Author" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="8" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Diagnostic" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0"/>
+<Layout name="Heading 2" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="2" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Ordered List 3" alignment="left" bullet="roman" firstindent="0" leftmargin="72" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1"/>
+<Layout name="Maple Plot" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="_pstyle257" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="4" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Normal" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="_pstyle258" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Dash Item" alignment="left" bullet="dash" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Heading 3" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Ordered List 4" alignment="left" bullet="ALPHABETIC" firstindent="0" leftmargin="108" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1"/>
+<Layout name="_pstyle259" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="4" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Maple Output" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.5" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="_pstyle256" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Line Printed Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0"/>
+<Layout name="List Item" alignment="left" bullet="indent" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Warning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Error" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Heading 1" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="4" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Title" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="12" spacebelow="12" linebreak="space" pagebreak-before="false" initial="0"/>
+<Layout name="Ordered List 2" alignment="left" bullet="alphabetic" firstindent="0" leftmargin="36" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1"/>
+<Pencil-style name="Pencil 3" pen-color="[0,0,0]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 1" pen-color="[0,0,0]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 5" pen-color="[255,0,0]" pen-height="5.0" pen-width="5.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 2" pen-color="[0,0,255]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 4" pen-color="[0,0,255]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Highlighter-style name="Highlighter 2" pen-color="[255,204,0]" pen-height="14.0" pen-width="14.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 4" pen-color="[0,255,255]" pen-height="32.0" pen-width="32.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 3" pen-color="[51,255,0]" pen-height="24.0" pen-width="24.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 1" pen-color="[255,153,255]" pen-height="12.0" pen-width="8.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 5" pen-color="[255,255,0]" pen-height="48.0" pen-width="48.0" pen-opacity="0.8"/>
+</Styles>
+<Task-table>
+    <Task-category name="&lt;default&gt;">
+    </Task-category>
+</Task-table>
+<Group labelreference="L3" drawlabel="true">
+<Input>
+<Text-field style="ParagraphStyle1" layout="_pstyle256"><Font style="_cstyle256">MOISE  - A TOPOLOGY PACKAGE FOR MAPLE </Font><Font style="_cstyle281">
+version 2.0</Font></Text-field>
+<Text-field style="_cstyle309" layout="_pstyle258">
+R. Andrew Hicks
+ahicks@math.drexel.edu</Text-field>
+<Text-field style="Normal" layout="Normal"></Text-field>
+<Text-field style="Normal" layout="Normal">Thu Jul 27 11:24:29 EDT 2006</Text-field>
+</Input>
+</Group>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="_cstyle276" layout="Heading 1"><Font bold="true" size="18">Introduction</Font></Text-field></Title>
+<Text-field style="_cstyle272" layout="_pstyle257"><Font bold="true">Welcome to to MOISE 0.2,  a Maple worksheet for doing calculations with simplicial complexes. MOISE started out as just the procedure &quot;homology&quot;, which computes the homology of a simplicial complex. The algorithm used by &quot;homology&quot; follows the one given in James Munkres' book &quot;Algebraic Topology&quot;. It is an old and straightforward method for computing homology groups, but one that is hard to do by hand. In addition to computing the homology groups of a complex, MOISE also contains a number of functions that operate on simplicial complexes:
+
+1) simplx(n) - create an n-dimensional simplex.
+2) sphere(n) - create an n-sphere.
+3) cone(C, p) - create the cone over the complex C with p as the cone point.
+4) suspension(C, p, q) - create the suspension of C over p and q.
+5) conn_sum(X, Y) - create the connected sum of X and Y.
+6) oiler(C) - compute the Euler characteristic of C.
+7) prod(X, Y) - compute a simplicial complex homeomorphic to the product of X and Y.
+
+Currently there are a number of important operations missing - notably quotients. Quotients can of course be done by hand (using subs!), as is illustrated by the below example of the construction of the cylinder from the square. 
+
+Regarding efficiency: there are many ways in which the procedures below could be optimized. I wanted the code to closely follow the mathematics to keep everything clear. This is another reason that I want to stay in the simplicial category for now.  A next step is to improve the algorithm for computing homology.</Font></Text-field>
+<Text-field style="_pstyle259" layout="_pstyle259"><Font bold="true" style="_cstyle310">If you have any questions about the routines or are interested in talking about algorithms in topology and algebra, please don't hesitate to contact me at ahicks@math.drexel.edu.
+
+R. Andrew Hicks</Font><Font bold="true" style="_cstyle274">
+
+
+How to use the procedure &quot;homology&quot;:</Font><Font bold="true" style="_cstyle275">
+
+What you need to know is what to feed into the procedure &quot;homology&quot; and  how to interpret what comes out of it. The output is easy to understand - it is a pair of lists. The first list is a list of the betti numbers, from the lowest dimension  to the highest. The second list is a list of the torsion coefficients in each dimension, again from the lowest to the highest.
+
+To specify a simplicial complex to &quot;homology&quot;, we use the same definition of an abstract simplicial complex that most people are familiar with, namely a set of sets satisfying certain properties. So, for example,
+
+homology({{}, {1},{2}, {1,2}});
+
+will compute the homology of a line segment. This data structure can be awkward if the space is just a little complicated, so I have a few tricks to make life easier. First of all, you really should only have to give the set consisting of the highest dimensional simplices, since this determines the complex completely. The routine &quot;complx&quot;, the first one below, will take such a set and add to it what is need to make it an official simplicial complex.
+This is part of the homology procedure, so you don't have to do it. If you do input a valid complex into homology, then that is ok too - complx won't mess it up. A few more tricks and procedures for building complexes are given in the examples at the end of the worksheet.</Font><Font bold="true" style="_cstyle273">
+
+If you want to use &quot;homology&quot; now, just enter the section below keep hitting enter until you get to the bottom of the worksheet, where the examples are. You can ignore all of the code and the comments and start computing.</Font><Font bold="true" style="_cstyle307">
+
+WARNING</Font><Font bold="true" style="_cstyle308"> - each section below assumes that you have executed the code that occurs prior to it. So if you jump ahead to a section you will get errors from maple since it won't recognize the names of the procedures and spaces.</Font></Text-field>
+<Text-field style="Normal" layout="Normal"></Text-field>
+</Section>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="_cstyle282" layout="Heading 1"><Font bold="true" size="18">The procedures with explanations</Font></Text-field></Title>
+<Group labelreference="L4" drawlabel="true">
+<Input>
+<Text-field style="ParagraphStyle2" layout="Normal"><Font style="_cstyle284">
+A few routines need to be loaded: from linalg, we need &quot;Smith&quot;, which is applied to the boundary operators to put them in normal form. &quot;powerset&quot; is used in the procedure &quot;complx&quot;. Then there are four list operations I like to use: &quot;card&quot; is the cardinality of a list or set, append appends an element to the back of a list, &quot;replace(l, i, x)&quot; replaces the ith element of l with x, and &quot;delete(l, i)&quot; deletes the ith element of a list l.</Font>
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L5" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">with(linalg):
+with(combinat, powerset, choose):
+card := l -&gt; nops(l):
+append := (l, x) -&gt; [op(l), x]:
+delete := (l,i) -&gt; subsop(i=NULL,l):
+replace := (l,i,x) -&gt;  subsop(i=x,l):
+</Text-field>
+</Input>
+<Output>
+<Text-field style="Warning" layout="Warning">Warning, the protected names norm and trace have been redefined and unprotected</Text-field>
+</Output>
+</Group>
+<Group labelreference="L6" drawlabel="true">
+<Input>
+<Text-field style="ParagraphStyle2" layout="Normal"><Font style="_cstyle257">
+The rountine &quot;complx&quot; will take a set of simplices and make it into a  simplicial complex by adding whatever simplices are needed. The basic data structure used for computation in this worksheet is a simplicial complex, but  a complex is  determined by the simplices that are maximal with respect to inclusion, so it the user may define a complex that way, and homology will use &quot;complx&quot; to fill it out.</Font>
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L7" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">complx  := proc(l)
+           local simplices, i:
+
+           simplices := {{}}:
+           for i from 1 to card(l) do
+               simplices := simplices union {op(powerset(l[i]))}:
+           od:
+           simplices:
+           end:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L8" drawlabel="true">
+<Input>
+<Text-field style="ParagraphStyle2" layout="Normal"><Font style="_cstyle258">
+For example, the  simplicial complex { {}, {1}, {2}, {3},  {4}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}, {1, 4} }, which represents a topological disc with a line segment stuck to it, is determined by { {1, 2, 3}, {1, 4}}:</Font>
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L9" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">X := complx({ {1, 2, 3}, {1, 4}}); </Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSJYRzYiPCw8IjwlIiIiIiIjIiIkPCRGKSIiJTwkRipGKzwjRis8JEYpRis8I0YpPCNGKjwkRilGKjwjRi0=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L10" drawlabel="true">
+<Input>
+<Text-field style="ParagraphStyle2" layout="Normal"><Font style="_cstyle259">
+&quot;chains&quot; takes a simpicial complex and a natural number n and creates a list of  the n-dimensional simplices of l. This is important because these simplices form the basis of a vector space  (module) of n-chains, and to write down matrices one needs for the basis vectors to be ordered. (The ordering is arbitrary.)</Font>
+THIS IS A TECHNICAL FUNCTION NEEDED FOR &quot;Homology&quot;.
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L11" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">chains :=  proc(l,n)
+          local simplices, i:
+
+          simplices := []:
+          for i from 1 to card(l) do
+              if card(l[i])=n+1 
+                 then
+                     simplices := append(simplices, sort(l[i])):
+              fi:
+          od:
+          simplices:
+          end:
+          </Text-field>
+</Input>
+</Group>
+<Group labelreference="L12" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">For example:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L13" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">chains(X, 1);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JjwkIiIiIiIlPCQiIiMiIiQ8JEYlRik8JEYlRig=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L14" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal"><Font style="_cstyle260">
+&quot;stratify&quot; takes a complex and applies &quot;chains&quot; to it for each dimension of the complex, producing a list of ordered bases for the chains in each dimension.</Font>
+THIS IS A TECHNICAL FUNCTION NEEDED FOR &quot;Homology&quot;.
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L15" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">stratify := proc(X)
+            local i, Y, b, fin:
+            Y := []:
+            fin := false:
+            i := -1:
+            while fin&lt;&gt;true do
+                  b := chains(X, i):
+                  if b=[]
+                     then 
+                         fin := true: 
+                  else
+                      Y := append(Y, b):
+                      i := i+1:
+                  fi:
+            od:
+            Y:
+            end:              
+               </Text-field>
+</Input>
+</Group>
+<Group labelreference="L16" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">stratify(X);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JjcjPCI3JjwjIiIkPCMiIiI8IyIiIzwjIiIlNyY8JEYqRi48JEYsRig8JEYqRig8JEYqRiw3IzwlRipGLEYo</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L17" drawlabel="true">
+<Input>
+<Text-field style="ParagraphStyle2" layout="Normal"><Font style="_cstyle293">
+&quot;wherein&quot; is just for finding what position in a list l the element x occurs. </Font>
+THIS IS A TECHNICAL FUNCTION NEEDED FOR &quot;Homology&quot;.
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L18" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">wherein := proc(l, x)
+           local i, entry:
+           for i from 1 to card(l) do
+               if l[i]=x
+                  then entry :=i:
+               fi:
+           od:
+           entry:
+           end:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L19" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal"><Font style="_cstyle261">
+&quot;boundary&quot; takes as input  a SINGLE n dimensional simplex and the list of n-1 dimensional simplices of a complex and produces the matrix of the associated boundary operator. &quot;boundary&quot; is used in &quot;d&quot;.</Font>
+THIS IS A TECHNICAL FUNCTION NEEDED FOR &quot;Homology&quot;.
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L20" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">boundary := proc(sim, nmos)
+            local i, v, sign, temp, j:
+
+            v := array(1..card(nmos)):
+
+            for i from 1 to card(nmos) do
+                v[i] := 0:
+            od:
+
+            sign := -1:
+
+            for i from 1 to card(sim) do
+                temp := delete(sim, i): 
+                j := wherein(nmos, temp):
+                v[j] := (-1)^(i+1):
+            od:
+            evalm(v):
+            end:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L21" drawlabel="true">
+<Input>
+<Text-field style="ParagraphStyle2" layout="Normal"><Font style="_cstyle296">
+For example:</Font>
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L22" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">boundary({1,3},[{3}, {1}, {2}, {4}]);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkobWZlbmNlZEdGJDYlLUknbXRhYmxlR0YkNiMtSSRtdHJHRiQ2Ji1JJG10ZEdGJDYjLUkjbW5HRiQ2JFEiMUYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJy1GNTYjLUYjNiQtSSNtb0dGJDYwUSomdW1pbnVzMDtGJ0Y7LyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0ZILyUpc3RyZXRjaHlHRkgvJSpzeW1tZXRyaWNHRkgvJShsYXJnZW9wR0ZILyUubW92YWJsZWxpbWl0c0dGSC8lJ2FjY2VudEdGSC8lJWZvcm1HUSdwcmVmaXhGJy8lJ2xzcGFjZUdRJDBlbUYnLyUncnNwYWNlR1EydmVyeXRoaW5tYXRoc3BhY2VGJy8lKG1pbnNpemVHRjovJShtYXhzaXplR1EpaW5maW5pdHlGJ0Y3LUY1NiMtRjg2JFEiMEYnRjtGXW8vJSVvcGVuR1EiW0YnLyUmY2xvc2VHUSJdRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkobWZlbmNlZEdGJDYlLUknbXRhYmxlR0YkNiMtSSRtdHJHRiQ2Ji1JJG10ZEdGJDYjLUkjbW5HRiQ2JFEiMUYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJy1GNTYjLUYjNiQtSSNtb0dGJDYwUSomdW1pbnVzMDtGJ0Y7LyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0ZILyUpc3RyZXRjaHlHRkgvJSpzeW1tZXRyaWNHRkgvJShsYXJnZW9wR0ZILyUubW92YWJsZWxpbWl0c0dGSC8lJ2FjY2VudEdGSC8lJWZvcm1HUSdwcmVmaXhGJy8lJ2xzcGFjZUdRJDBlbUYnLyUncnNwYWNlR1EydmVyeXRoaW5tYXRoc3BhY2VGJy8lKG1pbnNpemVHRjovJShtYXhzaXplR1EpaW5maW5pdHlGJ0Y3LUY1NiMtRjg2JFEiMEYnRjtGXW8vJSVvcGVuR1EiW0YnLyUmY2xvc2VHUSJdRic=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L23" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal"></Text-field>
+<Text-field style="ParagraphStyle2" layout="Normal"><Font style="_cstyle263">d produces the normal form of a boundary operator. The boundary operator from the n-chains to the (n-1)-chains is a matrix with respect to the bases given to it. We put the boundary  operator is Smith normal form, so that we can read off the topological data. The imput to d is a  pair of basis, one for the n simplices and one for the n-1 simplices, and the output is a matrix.</Font>
+THIS IS A TECHNICAL FUNCTION NEEDED FOR &quot;Homology&quot;.
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L24" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"> d := proc(ns, nmos)
+      local i, bo:
+      bo := []:
+
+      for i from 1 to card(ns) do
+          bo := append(bo,boundary(ns[i], nmos));
+      od:
+      ismith(transpose(matrix(bo))):
+      end:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L25" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal"><Font style="_cstyle264">
+For example:</Font>
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L26" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">d(stratify(X)[4], stratify(X)[3]);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkobWZlbmNlZEdGJDYlLUYjNiMtSSdtdGFibGVHRiQ2Ji1JJG10ckdGJDYjLUkkbXRkR0YkNiMtSSNtbkdGJDYkUSIxRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYnLUY0NiMtRjc2Iy1GOjYkUSIwRidGPUZARkAvJSVvcGVuR1EiW0YnLyUmY2xvc2VHUSJdRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkobWZlbmNlZEdGJDYlLUYjNiMtSSdtdGFibGVHRiQ2Ji1JJG10ckdGJDYjLUkkbXRkR0YkNiMtSSNtbkdGJDYkUSIxRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYnLUY0NiMtRjc2Iy1GOjYkUSIwRidGPUZARkAvJSVvcGVuR1EiW0YnLyUmY2xvc2VHUSJdRic=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L27" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal"><Font style="_cstyle279">
+&quot;dgnl&quot; is for pulling off the torsion coefficents from the boundary operators.</Font>
+THIS IS A TECHNICAL FUNCTION NEEDED FOR &quot;Homology&quot;.
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L28" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">dgnl := proc(A)
+        local i, torsion:
+        torsion := []:
+        for i from 1 to min(coldim(A), rowdim(A)) do
+            if A[i,i] &gt; 1 
+               then 
+                   torsion := append(torsion, A[i,i]):
+            fi:
+        od:
+        torsion:
+        end:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L29" drawlabel="true">
+<Input>
+<Text-field style="ParagraphStyle2" layout="Normal"><Font style="_cstyle265">Here is the main routine: 
+&quot;bops&quot; is just a list of the boundary operators.
+&quot;basislist&quot; is a list of bases for the chains in each dimension.</Font>
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L30" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology := proc(X)
+            local i, dim, bops, basislist, mats, Betti, Torsion, C:
+            Betti := []:
+            Torsion := []:
+            bops := []:
+            C := complx(X):
+            basislist := stratify(C):
+            dim := card(basislist):
+            
+            for i from 1 to dim-1 do
+                bops := append(bops , d(basislist[i+1], basislist[i])):
+            od:
+            mats := bops:
+             
+            for i from 1 to card(mats)-1 do:
+                Betti := append(Betti, rowdim(transpose(mats[i])) 
+                                - rank(transpose(mats[i])) - rank(mats[i+1])):
+                
+            od:
+
+            Betti:= append(Betti, coldim(mats[card(mats)]) 
+                           - rank(transpose(mats[card(mats)]))):
+                 
+            Betti := replace(Betti, 1, Betti[1] + 1 ):
+
+            for i from 2 to card(mats) do
+                Torsion := append(Torsion, dgnl(mats[i])):
+            od:
+            Torsion := append(Torsion, []):
+
+            [Betti, Torsion]:
+           
+
+            end:
+</Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="_cstyle283" layout="Heading 1"><Font bold="true" size="18">Basic examples</Font></Text-field></Title>
+<Group labelreference="L31" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+The homology of a point:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L32" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology({{0}});</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDcjIiIiNyM3Ig==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L33" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+The homology of a line segment:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L34" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology({{1, 2}});</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDckIiIiIiIhNyQ3IkYo</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L35" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+The homology of S^1:
+ </Text-field>
+</Input>
+</Group>
+<Group labelreference="L36" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">S1 := { {1,2},{2,3},{3,1} }:
+Homology( S1 );</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDckIiIiRiU3JDciRic=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L37" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+The figure 8 space has two generators for H1:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L38" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">figure8 := { {1,2},{2,3},{3,1}, {3,a}, {a,b}, {b,3} };
+Homology(figure8);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SShmaWd1cmU4RzYiPCg8JCIiIyIiJDwkIiIiRik8JEYrRig8JEYpSSJhR0YlPCRGLkkiYkdGJTwkRilGMA==</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDckIiIiIiIjNyQ3IkYo</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L39" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+The zeroth homology group counts the number of connected components:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L40" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology( S1 union { {a}, {b}, {c} } );</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDckIiIlIiIiNyQ3IkYo</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L41" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+Here is a rountine that will make a simplex of any dimension for you:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L42" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">simplx := proc(n)
+          local i:
+          {seq(i,i=1..n+1)}:
+          end: </Text-field>
+</Input>
+</Group>
+<Group labelreference="L43" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">simplx(3);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM8JiIiIiIiIyIiJCIiJQ==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L44" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(simplx(3));</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDcmIiIiIiIhRiZGJjcmNyJGKEYoRig=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L45" drawlabel="true">
+<Input>
+<Text-field style="_cstyle301" layout="Normal">
+A  square:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L46" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">squar := { {1,2,5}, {2,5,6}, {2,3,6}, {3,6,7}, {3,4,7}, {4,7,8} };</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSZzcXVhckc2IjwoPCUiIiIiIiMiIiY8JUYpRioiIic8JUYpIiIkRiw8JUYuRiwiIig8JUYuIiIlRjA8JUYyRjAiIik=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L47" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal"><Font style="_cstyle266">
+Now compute the homology: It should have only one non-trivial group, the zeroth group, with is isomorphic to Z, the integers and hence has rank 1. It has no torsion.</Font><Font style="_cstyle302">
+ </Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L48" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(squar);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiIiIhRiY3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L49" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal"><Font style="_cstyle267">
+&quot;subs&quot;is a cute way to make quotient spaces! Here we glue the edges of the square together.</Font>
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L50" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">cylinder := subs(4=1,8=5,squar);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSljeWxpbmRlckc2IjwoPCUiIiIiIiMiIiY8JUYpRioiIic8JUYpIiIkRiw8JUYuRiwiIig8JUYoRi5GMDwlRihGKkYw</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L51" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal"><Font style="_cstyle268">
+The cylinder is not simply, connected: the first homology group is Z.</Font>
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L52" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(cylinder);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiRiUiIiE3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L53" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+A &quot;famous&quot; topological space!:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L54" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">mobius_strip := subs(4=5,8=1,squar);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SS1tb2JpdXNfc3RyaXBHNiI8KDwlIiIiIiIjIiImPCVGKUYqIiInPCVGKSIiJEYsPCVGLkYsIiIoPCVGKEYqRjA8JUYuRipGMA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L55" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(mobius_strip);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiRiUiIiE3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L56" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal"><Font style="_cstyle270">
+Next we want to build a torus. But careful - we don't have enough triangles in squar to form a torus as a quotient. So we make a few copies and glue them together.</Font>
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L57" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">squar2 := subs(1=5,2=6,3=7,4=8,subs(5=9,6=10, 7=11, 8=12, squar));</Text-field>
+<Text-field style="Maple Output" layout="Maple Output"></Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSdzcXVhcjJHNiI8KDwlIiIpIiM2IiM3PCUiIihGKEYpPCUiIiYiIiciIio8JUYvRjAiIzU8JUYsRjJGKTwlRi9GLEYy</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L58" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">squar3:= subs(5=9,6=10,7=11,8=12,subs(9=13,10=14, 11=15, 12=16, squar2));</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSdzcXVhcjNHNiI8KDwlIiM1IiM4IiM5PCUiIipGKEYpPCUiIzZGKiIjOjwlRihGLkYqPCUiIzdGLyIjOzwlRi5GMkYv</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L59" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">bigsquare := squar3 union squar union squar2;</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSpiaWdzcXVhcmVHNiI8NDwlIiIpIiM2IiM3PCUiIihGKEYpPCUiIiYiIiciIio8JUYvRjAiIzU8JUYsRjJGKTwlRi9GLEYyPCVGMiIjOCIjOTwlRjBGMkY2PCVGKUY3IiM6PCVGMkYpRjc8JUYqRjoiIzs8JUYpRipGOjwlIiIiIiIjRi48JUZBRi5GLzwlRkEiIiRGLzwlRkRGL0YsPCVGRCIiJUYsPCVGR0YsRig=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L60" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">bigcylinder := subs(13=1, 14=2,15=3,16=4, bigsquare);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSxiaWdjeWxpbmRlckc2Ijw0PCUiIikiIzYiIzc8JSIiKEYoRik8JSIiJiIiJyIiKjwlRi9GMCIjNTwlRixGMkYpPCVGL0YsRjI8JSIiJCIiJUYqPCUiIiJGMEYyPCUiIiNGMkYpPCVGOUY7Ri48JUY7Ri5GLzwlRjtGNkYvPCVGNkYvRiw8JUY5RjtGMjwlRjZGKUYqPCVGO0Y2Rik8JUY2RjdGLDwlRjdGLEYo</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L61" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(bigcylinder);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiRiUiIiE3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L62" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">torus := subs(4=1,8=5,12=9, bigcylinder);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSZ0b3J1c0c2Ijw0PCUiIiYiIiciIio8JUYpRioiIzU8JSIiKEYsIiM2PCVGKUYuRiw8JSIiIkYqRiw8JSIiI0YsRi88JUYyRjRGKDwlRjRGKEYpPCVGNCIiJEYpPCVGOEYpRi48JUYyRjRGLDwlRjRGOEYvPCVGMkY4Ri48JUYyRihGLjwlRihGLkYvPCVGOEYqRi88JUYyRjhGKjwlRihGKkYv</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L63" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(torus);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiIiIjRiU3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L64" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">klein := subs(4=1,8=9,12=5, bigcylinder);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSZrbGVpbkc2Ijw0PCUiIiYiIiciIio8JUYpRioiIzU8JSIiKEYsIiM2PCVGKUYuRiw8JSIiIkYqRiw8JSIiI0YsRi88JUYyRjRGKDwlRjRGKEYpPCVGNCIiJEYpPCVGOEYpRi48JUYyRjRGLDwlRjRGOEYvPCVGMkY4Ri48JUYoRipGLzwlRi5GKkYvPCVGMkYuRio8JUY4RihGLzwlRjJGOEYo</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L65" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+The Klein bottle has torsion:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L66" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(klein);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiRiUiIiE3JTciNyMiIiNGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L67" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+S2 is not hard to triangulate:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L68" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">tetrahedron := { {1,2,3}, {1,2,4}, {1,3,4}, {2,3,4}};</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSx0ZXRyYWhlZHJvbkc2IjwmPCUiIiIiIiMiIiQ8JUYoRikiIiU8JUYoRipGLDwlRilGKkYs</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L69" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(tetrahedron);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiIiIhRiU3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L70" drawlabel="true">
+<Input>
+<Text-field style="ParagraphStyle2" layout="Normal"><Font style="_cstyle303">
+There is a better way to build spheres - use the &quot;choose&quot; function to generate the faces of the n dimensional tetrahedron:
+(Note - in the older version of Maple, choose only applies to lists. If you in this situation, use the function defined below called &quot;setchoose&quot;.)</Font>
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L71" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">S3 := choose({1,2,3,4,5},4);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSNTM0c2IjwnPCYiIiIiIiMiIiQiIiU8JkYoRilGKiIiJjwmRihGKUYrRi08JkYoRipGK0YtPCZGKUYqRitGLQ==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L72" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(S3);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDcmIiIiIiIhRiZGJTcmNyJGKEYoRig=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L73" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+It is handy to have this a a function:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L74" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">sphere := n -&gt; choose(simplx(n+1),n+1):
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L75" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">S2 := sphere(2);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSNTMkc2IjwmPCUiIiIiIiMiIiQ8JUYoRikiIiU8JUYoRipGLDwlRilGKkYs</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L76" drawlabel="true">
+<Input>
+<Text-field style="ParagraphStyle2" layout="Normal"><Font style="_cstyle304">
+The one point union of S^1 and S^2: just make sure they have a point in common.</Font>
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L77" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">newS2 := choose({1,b,c,d},3);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSZuZXdTMkc2IjwmPCUiIiJJImNHRiVJImJHRiU8JUYoRilJImRHRiU8JUYoRipGLDwlRilGKkYs</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L78" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(newS2);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiIiIhRiU3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L79" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(S1 union newS2);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiRiVGJTclNyJGJ0Yn</Equation></Text-field>
+</Output>
+</Group>
+</Section>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="_cstyle306" layout="Heading 1"><Font bold="true" size="18">Operations on spaces and some more examples</Font></Text-field></Title>
+<Group labelreference="L80" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+Here are some of the spaces that appear above:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L81" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">S1 := { {1,2},{2,3},{3,1} }:
+figure8 := { {1,2},{2,3},{3,1}, {3,a}, {a,b}, {b,3} }:
+squar := { {1,2,5}, {2,5,6}, {2,3,6}, {3,6,7}, {3,4,7}, {4,7,8} }:
+cylinder := subs(4=1,8=5,squar):
+mobius_strip := subs(4=5,8=1,squar):
+bigsquare := {{4, 7, 8}, {5, 6, 9}, {6, 9, 10}, {7, 10, 11}, {6, 7, 10}, {8, 11, 12}, {7, 8, 11}, {10, 13, 14}, {9, 10, 13}, {11, 14, 15}, {10, 11, 14}, {12, 15, 16}, {11, 12, 15}, {1, 2, 5}, {2, 5, 6}, {2, 3, 6}, {3, 6, 7}, {3, 4, 7}}:
+bigcylinder := subs(13=1, 14=2,15=3,16=4, bigsquare):
+torus := subs(4=1,8=5,12=9, bigcylinder):
+klein := subs(4=1,8=9,12=5, bigcylinder):
+tetrahedron := { {1,2,3}, {1,2,4}, {1,3,4}, {2,3,4}}:
+S2 := {{1, 2, 3}, {1, 2, 4}, {2, 3, 4}, {1, 3, 4}}:
+S3 := {{1, 2, 3, 4}, {1, 2, 3, 5}, {1, 2, 4, 5}, {1, 3, 4, 5}, {2, 3, 4, 5}}:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L82" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+A new operation: &quot;cone&quot; constructs the simpicial complex of a given complex and cone point.
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L83" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">cone := proc(C, conepoint)
+        local i,  cone:
+        cone := {{}}:
+        for i from 1 to card(C) do
+            cone := cone union {{conepoint} union C[i]}:
+        od:
+        cone:
+        end:
+    </Text-field>
+</Input>
+</Group>
+<Group labelreference="L84" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">cone(S1, N);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM8JjwiPCUiIiMiIiRJIk5HNiI8JSIiIkYnRig8JUYrRiZGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L85" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+Another way to compute the homology of S2: write it as a union of cones.
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L86" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(cone(S1, N) union cone(S1, S));</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiIiIhRiU3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L87" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+This leads to the notion of suspension:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L88" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">suspension := proc(C, p, q)
+              cone(C, p) union cone (C, q):
+              end:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L89" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+Here is an interesting space :
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L90" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(suspension(torus, N, S));</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDcmIiIiIiIhIiIjRiU3JjciRilGKUYp</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L91" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+The Euler characteristic:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L92" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">oiler := proc(C)
+         local i, eulerchar, X:
+         eulerchar := 0:
+         X := stratify(complx(C)):
+         for i from 2 to card(X) do
+             eulerchar := eulerchar + card(X[i])*((-1)^i):
+
+         od:
+         eulerchar:
+         end: </Text-field>
+</Input>
+</Group>
+<Group labelreference="L93" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">oiler(torus);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiIiE=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L94" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">S2 := choose({1,2,3,4},3);
+oiler(S2);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSNTMkc2IjwmPCUiIiIiIiMiIiQ8JUYoRikiIiU8JUYoRipGLDwlRilGKkYs</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiIiM=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L95" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">oiler(klein);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiIiE=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L96" drawlabel="true">
+<Input>
+<Text-field style="Normal" layout="Normal">
+The connected sum of two spaces is formed by removing a solid ball from each space and gluing the spaces along the boundaries of the ball. In dimensions &gt; 2 how you glue matters. 
+
+WARNING - this connected sum chooses the gluing arbitrarily. Two simplices are removed and their vertices indentified, but how they are ordered is random at this time.  Also, no checking is done to see if both of the manifolds have the same dimension.
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L97" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">tag0 := C -&gt; map( S-&gt; map(x-&gt;[x, 0],S),C):
+tag1 := C -&gt; map( S-&gt; map(x-&gt;[x, 1],S),C):
+conn_sum := proc(X, Y)
+                 local i, A, B, asimplex, bsimplex, alist, blist:
+                 A := complx(tag0(X)):
+                 B := complx(tag1(Y)):
+                 alist := stratify(A):
+                 blist := stratify(B):
+                 asimplex := alist[card(alist)][1]:
+                 bsimplex := blist[card(blist)][1]:
+                 A := A minus {asimplex}:
+                 B := B minus {bsimplex}:
+                 for i from 1 to card(asimplex) do
+                     B := subs(bsimplex[i]=asimplex[i], B):
+                 od:
+                 A union B:
+                 end:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L98" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">conn_sum(S1, S1);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM8KzwiPCM3JCIiIkYnPCQ3JCIiJCIiITckRidGKzwkNyQiIiNGK0YsPCRGLkYmPCRGKUYmPCNGLjwjRik8I0Ys</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L99" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(conn_sum(S1, S1));</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDckIiIiRiU3JDciRic=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L100" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">C := conn_sum(torus, torus):
+Homology(C);
+</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiIiIlRiU3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L101" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">oiler(C);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMhIiM=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L102" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">C:= conn_sum(S2, S2):
+Homology(C);
+</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiIiIhRiU3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L103" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">oiler(C);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiIiM=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L104" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">C := conn_sum(torus, S2):
+Homology(C);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiIiIjRiU3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L105" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">oiler(C);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiIiE=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L106" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">C := conn_sum(torus, klein):
+Homology(C);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiIiIkIiIhNyU3IjcjIiIjRik=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L107" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">oiler(C);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMhIiM=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L108" drawlabel="true">
+<Input>
+<Text-field style="Text" layout="Normal"></Text-field>
+<Text-field style="Text" layout="Normal">&quot;bin&quot; is a routine that takes a set and a subset and produces the corresponding binary string. </Text-field>
+<Text-field style="Text" layout="Normal">THIS IS A TECHNICAL FUNCTION NEEDED FOR &quot;prod&quot;.
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L109" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">bin := proc(A, B)
+       local ii, bs;
+       bs := []:
+       
+
+       for ii from 1 to card(A) do
+           if member(A[ii], B) then
+              bs := append(bs, 1)
+           else
+              bs := append(bs, 0):
+           fi:
+       od:
+       bs:
+end proc:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L110" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group labelreference="L111" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group labelreference="L112" drawlabel="true">
+<Input>
+<Text-field style="Text" layout="Normal">
+&quot;sproduct&quot; computes the product of two simplices.</Text-field>
+<Text-field style="Text" layout="Normal">THIS IS A TECHNICAL FUNCTION NEEDED FOR &quot;prod&quot;.
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L113" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">sproduct  := proc(s1, s2)
+            local ii, p, subsets, bs, simplices, 
+                  sim, m, n, Mi, S, i1, i2, j1, j2, jj,
+                  S1, S2;
+
+            n := card(s1) - 1:
+            m := card(s2) - 1:
+
+            S := [seq(jj,  jj=1..(m+n))]:
+            Mi := min(m,n):
+            
+            
+            subsets := choose(S, Mi):            
+            if Mi=m then S1 := s2: S2 := s1: fi:
+            if Mi=n then S1 := s1: S2 := s2: fi:
+
+            
+            simplices := {}:
+            
+            for ii from 1 to card(subsets) do
+                bs := bin(S, subsets[ii]):
+              
+                sim := [[S1[1], S2[1]]]:
+                i1 := 1: i2 := 1:
+                j1 := 1: j2 := 1:
+                for jj from 1 to card(bs) do:
+                    i1 := i1 + bs[jj]:
+                    i2 := i2 + 1-bs[jj]:
+                    sim := append(sim, [S1[i1],S2[i2]]):
+                    
+                od:
+                simplices := simplices union {sim}
+                
+            od:
+            simplices:
+            end proc:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L114" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">sproduct({1,2},{4,5,6});</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM8JTcmNyQiIiIiIiU3JEYmIiImNyRGJiIiJzckIiIjRis3JkYlRig3JEYtRilGLDcmRiU3JEYtRidGL0Ys</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L115" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">prod    := proc(A, B)
+           local simplices, Atop, Btop, ii, jj, Astrat, Bstrat:
+
+           Astrat := stratify(complx(A)):
+           Bstrat := stratify(complx(B)):          
+           simplices := {}:
+           Atop := Astrat[card(Astrat)]:
+           Btop := Bstrat[card(Bstrat)]:
+    
+           for ii from 1 to card(Atop) do
+               for jj from 1 to card(Btop) do
+                   simplices := simplices union sproduct(Atop[ii], Btop[jj]):
+               od:
+           od:
+           simplices:
+           end proc:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L116" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">prod    := proc(A, B)
+           local simplices, ii, jj:
+     
+           simplices := {}:
+    
+           for ii from 1 to card(A) do
+               for jj from 1 to card(B) do
+                   simplices := simplices union sproduct(A[ii], B[jj]):
+               od:
+           od:
+           simplices:
+           end proc:
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L117" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">S1xS1 := prod(S1,S1);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM+SSZTMXhTMUc2Ijw0NyU3JCIiIkYpNyQiIiNGKTckRisiIiQ3JUYoNyRGKUYtRiw3JUYoRio3JEYrRis3JTckRilGK0YxRiw3JUYzRi9GLDclRjE3JEYtRis3JEYtRi03JUYxRixGNzclRjNGL0Y3NyVGKDckRi1GKUY3NyVGKEYvRjc3JUYqRjFGNjclRjNGNkY3NyVGKkY7Rjc3JUYqRixGNzclRipGO0Y2NyVGKEYzRjE3JUYoRjtGNjclRihGM0Y2</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L118" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(S1xS1);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDclIiIiIiIjRiU3JTciRihGKA==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L119" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">S1xS2 := prod(S1, S2):
+Homology(S1xS2);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiM3JDcmIiIiRiVGJUYlNyY3IkYnRidGJw==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L120" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">S2xS2 := prod(S2, S2):
+</Text-field>
+</Input>
+</Group>
+<Group labelreference="L121" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">card(S2xS2);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiIycq</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L122" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">Homology(S2xS2);</Text-field>
+</Input>
+<Output>
+<Text-field style="Warning" layout="Warning">Warning,  computation interrupted</Text-field>
+</Output>
+</Group>
+<Group labelreference="L123" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">card(complx(S2xS2));</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NiMiJGEn</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L124" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Text-field executable="false" family="Times New Roman" opaque="false" foreground="[0,0,0]" superscript="false" placeholder="false" readonly="false" subscript="false" bold="false" italic="false" underline="false" background="[255,255,255]" size="12" linebreak="space" spaceabove="0" rightmargin="0" bullet="none" firstindent="0" linespacing="0.0" pagebreak-before="false" leftmargin="0" alignment="left" initial="0" spacebelow="0"></Text-field>
+<Text-field executable="false" family="Times New Roman" opaque="false" foreground="[0,0,0]" superscript="false" placeholder="false" readonly="false" subscript="false" bold="false" italic="false" underline="false" background="[255,255,255]" size="12" linebreak="space" spaceabove="0" rightmargin="0" bullet="none" firstindent="0" linespacing="0.0" pagebreak-before="false" leftmargin="0" alignment="left" initial="0" spacebelow="0"></Text-field>
+<Text-field executable="false" family="Times New Roman" opaque="false" foreground="[0,0,0]" superscript="false" placeholder="false" readonly="false" subscript="false" bold="false" italic="false" underline="false" background="[255,255,255]" size="12" linebreak="space" spaceabove="0" rightmargin="0" bullet="none" firstindent="0" linespacing="0.0" pagebreak-before="false" leftmargin="0" alignment="left" initial="0" spacebelow="0"></Text-field>
+</Worksheet>
